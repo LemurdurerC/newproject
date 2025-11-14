@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import backimage from './5.png'; // ✅ Import de l'image locale
+#import backimage from './5.png'; // ✅ Import de l'image locale
 
 const Hero = () => {
   const { t } = useLanguage();
