@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-//import backimage from './5.png'; // ✅ Import de l'image locale
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -14,7 +13,7 @@ const Hero = () => {
 
   useEffect(() => {
     const weddingDate = new Date('2026-07-11T14:30:00');
-    
+
     const updateCountdown = () => {
       const now = new Date().getTime();
       const distance = weddingDate.getTime() - now;
@@ -40,7 +39,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed md:bg-fixed bg-no-repeat"
         style={{
-          backgroundImage: `url(${backimage})`,
+          backgroundImage: 'url(https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
