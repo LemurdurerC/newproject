@@ -39,12 +39,12 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed md:bg-fixed bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(/7.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-rose-900/40 via-purple-900/30 to-orange-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-blue-900/20"></div>
       </div>
 
       {/* Floating elements */}
