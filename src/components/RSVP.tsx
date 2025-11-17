@@ -398,7 +398,7 @@ const RSVP = () => {
                 <div>
                   <label className="flex items-center text-gray-700 font-medium mb-3">
                     <MessageSquare className="w-5 h-5 mr-2 text-purple-500" />
-                    
+                    Message pour les mariés (optionnel)
                   </label>
                   <textarea
                     name="message"
