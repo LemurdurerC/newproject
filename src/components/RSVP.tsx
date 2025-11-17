@@ -68,7 +68,7 @@ const RSVP = () => {
 
       // Generate WhatsApp link if carpooling is requested
       if (formData.carpooling === 'yes') {
-        setWhatsappLink('https://chat.whatsapp.com/invite/covoiturage-simon-talia-2026');
+        setWhatsappLink('https://chat.whatsapp.com/L6kszCLU8MR9amANYZYAGW');
       }
 
       addDebug('Soumission terminée avec succès!');
