@@ -1,4 +1,4 @@
-6import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Heart, Calendar } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -39,7 +39,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed md:bg-fixed bg-no-repeat"
         style={{
-          backgroundImage: 'url(/6.png)',
+          backgroundImage: 'url(/7.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
