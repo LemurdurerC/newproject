@@ -15,44 +15,44 @@ const Quiz = () => {
 
   const questions = [
     {
-      question: "Quelle est la date de votre rencontre ?",
-      options: ["Juillet 2014", "Juillet 2015", "Juillet 2016", "Juillet 2017"],
+      question: "Où Simon et Talia se sont-ils rencontrés ?",
+      options: ["Festival de musique", "Université", "Voyage en train", "Application de rencontre"],
       correct: 0
     },
     {
-      question: "Quand avez-vous emménagé ensemble ?",
-      options: ["Septembre 2020", "Septembre 2021", "Juin 2022", "Juin 2023"],
+      question: "Quel est le plat préféré de Simon ?",
+      options: ["Pasta carbonara", "Sushi", "Coq au vin", "Tacos"],
+      correct: 0
+    },
+    {
+      question: "Dans quel pays Talia a-t-elle vécu le plus longtemps après la France ?",
+      options: ["Espagne", "Irlande", "Japon", "Allemagne"],
+      correct: 2
+    },
+    {
+      question: "Quel est le hobby commun de Simon et Talia ?",
+      options: ["Cuisine", "Randonnée", "Photographie", "Danse"],
+      correct: 2
+    },
+    {
+      question: "Combien de pays ont-ils visités ensemble ?",
+      options: ["12", "15", "18", "21"],
+      correct: 2
+    },
+    {
+      question: "Quelle est la couleur préférée de Talia ?",
+      options: ["Rose", "Violet", "Vert sauge", "Orange pêche"],
       correct: 1
     },
     {
-      question: "Quel est le nombre total de jeux de cartes dans la collection ?",
-      options: ["101 – 150", "151 – 200", "201 – 250", "251 - 300"],
-      correct: 2
-    },
-    {
-      question: "Quel est votre jeu de société préféré ? (On sait ça change de temps en temps)",
-      options: ["Splendor", "The Crew", "Unlock", "7 Wonders Duel"],
-      correct: 3
-    },
-    {
-      question: "Dans quelle ville n'avez-vous pas fait d'escape game parmi les villes suivantes ?",
-      options: ["Lisbonne", "Prague", "Vilnius", "Zagreb"],
+      question: "Où Simon a-t-il demandé Talia en mariage ?",
+      options: ["Paris", "Sous un cerisier", "En Grèce", "Au Japon"],
       correct: 1
     },
     {
-      question: "A quelle altitude Simon a-t-il fait sa demande en mariage ?",
-      options: ["35m", "1,909m", "3,776m", "8,849m"],
-      correct: 2
-    },
-    {
-      question: "Si Simon quittait son travail, qu'est-ce qu'il préférerait ouvrir ?",
-      options: ["Un escape game", "Une cave à vodka", "Un bar à jeux", "Une librairie franco-japonaise"],
-      correct: 2
-    },
-    {
-      question: "Combien de pays avez-vous visité ensemble en Europe (en comptant la France) ?",
-      options: ["13 pays", "15 pays", "17 pays", "19 pays"],
-      correct: 3
+      question: "Quel est l'animal de compagnie qu'ils aimeraient adopter ?",
+      options: ["Chat", "Chien", "Lapin", "Oiseau"],
+      correct: 0
     }
   ];
 
@@ -243,7 +243,7 @@ const Quiz = () => {
 
           <div className="bg-white rounded-3xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Confirmez vos résultats
+              Sauvegardez vos résultats
             </h3>
             <div className="text-center mb-6">
               <p className="text-gray-600">
