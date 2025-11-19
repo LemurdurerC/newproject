@@ -3,6 +3,8 @@ import { Heart, MapPin, Camera } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import mapSvg from './map.svg';
 
+import spanImg from '../7.jpg';
+
 const OurStory = () => {
   const { t } = useLanguage();
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
@@ -43,7 +45,7 @@ const countries = [
     name: 'Spain',
     x: 25,
     y: 87,
-    image: 'https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    image: '/tt.jpg',
     flag: '🇪🇸',
     landmark: '🏛️',
     description: 'Soleil, architecture et saveurs espagnoles'

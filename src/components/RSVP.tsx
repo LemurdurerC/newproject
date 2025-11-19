@@ -349,34 +349,29 @@ const RSVP = () => {
                     Covoiturage
                   </label>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="group relative">
-                      <label className="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-blue-50 transition-colors duration-200">
-                        <input
-                          type="radio"
-                          name="carpooling"
-                          value="yes"
-                          checked={formData.carpooling === 'yes'}
-                          onChange={handleChange}
-                          className="sr-only"
-                        />
-                        <div className={`w-5 h-5 rounded-full border-2 mr-3 ${
-                          formData.carpooling === 'yes'
-                            ? 'border-blue-500 bg-blue-500'
-                            : 'border-gray-300'
-                        }`}>
-                          {formData.carpooling === 'yes' && (
-                            <div className="w-full h-full rounded-full bg-white transform scale-50"></div>
-                          )}
-                        </div>
-                        <div>
-                          <span className="text-gray-700 font-medium">Oui, je souhaite covoiturer</span>
-                          <p className="text-sm text-gray-500">Accès au groupe WhatsApp</p>
-                        </div>
-                      </label>
-                      <div className="absolute left-0 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto z-50">
-                        <img src="/tt.jpg" alt="Covoiturage" className="rounded-lg shadow-xl w-40 h-auto" />
+                    <label className="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-blue-50 transition-colors duration-200">
+                      <input
+                        type="radio"
+                        name="carpooling"
+                        value="yes"
+                        checked={formData.carpooling === 'yes'}
+                        onChange={handleChange}
+                        className="sr-only"
+                      />
+                      <div className={`w-5 h-5 rounded-full border-2 mr-3 ${
+                        formData.carpooling === 'yes' 
+                          ? 'border-blue-500 bg-blue-500' 
+                          : 'border-gray-300'
+                      }`}>
+                        {formData.carpooling === 'yes' && (
+                          <div className="w-full h-full rounded-full bg-white transform scale-50"></div>
+                        )}
                       </div>
-                    </div>
+                      <div>
+                        <span className="text-gray-700 font-medium">Oui, je souhaite covoiturer</span>
+                        <p className="text-sm text-gray-500">Accès au groupe WhatsApp</p>
+                      </div>
+                    </label>
                     <label className="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition-colors duration-200">
                       <input
                         type="radio"
