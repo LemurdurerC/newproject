@@ -181,7 +181,7 @@ const Venue = () => {
                 <div>
                   <p className="font-medium">Covoiturage</p>
                   <p className="text-sm">
-                    <a href="https://chat.whatsapp.com/invite/covoiturage-simon-talia-2026" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 underline">
+                    <a href="https://chat.whatsapp.com/L6kszCLU8MR9amANYZYAGW" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 underline">
                       Rejoindre le groupe WhatsApp
                     </a>
                   </p>
