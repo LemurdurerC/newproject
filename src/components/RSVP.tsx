@@ -119,7 +119,7 @@ const RSVP = () => {
       carpooling: formData.carpooling,
       message: formData.message,
     });
-    setWhatsappLink('');
+    setWhatsappLink('https://chat.whatsapp.com/L6kszCLU8MR9amANYZYAGW');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
