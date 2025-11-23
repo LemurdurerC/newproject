@@ -125,7 +125,6 @@ const Venue = () => {
         <div className="max-w-3xl mx-auto mt-16">
   <div className="bg-white rounded-2xl p-8 shadow-lg">
     <div className="flex items-center mb-6">
-      <Train className="w-8 h-8 text-purple-500 mr-4" />
 <h3 className="text-xl font-bold text-gray-800">
   {t("En plus de ces hébergements, vous trouverez une liste d'hôtels et gîtes en cliquant sur ces liens : ")}
   <a
