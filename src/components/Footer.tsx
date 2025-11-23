@@ -70,9 +70,6 @@ const Footer = () => {
 
           {/* Wedding Quote */}
           <div className="text-center md:text-right">
-            <h3 className="text-xl font-bold mb-6 text-yellow-300">
-              Notre Promesse
-            </h3>
             <div className="space-y-4">
               <p className="text-purple-100 italic leading-relaxed">
                 "Le bonheur n’est réel que lors qu’il est partagé"
