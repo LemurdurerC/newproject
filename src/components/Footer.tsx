@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-center md:justify-start group">
                 <Mail className="w-5 h-5 mr-3 text-purple-300 group-hover:text-purple-200 transition-colors duration-200" />
-                <span className="group-hover:text-purple-200 transition-colors duration-200">simon.talia.mariage@email.com</span>
+                <span className="group-hover:text-purple-200 transition-colors duration-200">mariage.simon.et.talia@gmail.com</span>
               </div>
               <div className="flex items-center justify-center md:justify-start group">
                 <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
