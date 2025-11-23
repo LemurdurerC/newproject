@@ -75,7 +75,7 @@ const Footer = () => {
                 "Le bonheur n’est réel que lors qu’il est partagé"
               </p>
               <p className="text-sm text-purple-300">
-                - Simon & Talia
+                - Into the wild
               </p>
             </div>
           </div>
