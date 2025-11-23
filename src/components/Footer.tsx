@@ -29,7 +29,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start group">
                 <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
-                <span className="group-hover:text-green-200 transition-colors duration-200">+33 6 12 34 56 78</span>
+                <span className="group-hover:text-green-200 transition-colors duration-200">+33 7 82 22 83 47 
+                                        </span>
+
+                <span className="group-hover:text-green-200 transition-colors duration-200">
+                                          +33 6 11 43 83 42</span>
               </div>
               <div className="flex items-center justify-center md:justify-start group">
                 <Instagram className="w-5 h-5 mr-3 text-rose-300 group-hover:text-rose-200 transition-colors duration-200" />
