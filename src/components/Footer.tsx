@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="flex items-center justify-center">
                 <MapPin className="w-5 h-5 mr-2 text-green-300" />
                 <p className="text-purple-200">
-                  Domaine des Oliviers, Gordes
+                 Domaine de Saint-Marc, Merry-sur-Yonne
                 </p>
               </div>
               <div className="inline-flex items-center space-x-4 text-purple-300 mt-6">
