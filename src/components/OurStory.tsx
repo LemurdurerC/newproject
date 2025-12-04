@@ -109,7 +109,7 @@ const countries = [
      style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}>
              {/* Fixed background map */}
 <div className="absolute inset-0 bg-no-repeat bg-center" style={{ backgroundImage: url(${mapSvg}), backgroundSize: 'contain', backgroundPosition: 'center', }} > <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30">
-</div>
+
                 
 {/* Countries */}
 {countries.map((country) => (
