@@ -33,7 +33,7 @@ const Registry = () => {
                 Cadeaux choisis avec amour
               </p>
 
-              <a href="https://www.exemple-liste-mariage.com/simon-talia" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 text-green-600 hover:bg-green-50 border border-green-200 rounded-xl font-medium transition-all duration-300 group-hover:scale-105">
+              <a href="https://www.millemercismariage.com/simon-et-talia/liste.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 text-green-600 hover:bg-green-50 border border-green-200 rounded-xl font-medium transition-all duration-300 group-hover:scale-105">
                 Voir notre Liste
                 <ExternalLink className="w-4 h-4 ml-2" />
               </a>
