@@ -108,16 +108,18 @@ const countries = [
               <div className="relative w-full aspect-[3/2] max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden"
      style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}>
              {/* Fixed background map */}
-  <div
-    className="absolute inset-0 bg-no-repeat bg-center"
-    style={{
-      backgroundImage: `url(${mapSvg})`,
-      backgroundSize: 'contain',
-      backgroundPosition: 'center',
-    }}
-  >
-    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
-  </div>
+<div
+  className="
+    absolute inset-0 bg-no-repeat bg-center
+    bg-[length:200%]       /* Zoom sur mobile */
+    md:bg-contain          /* Normal sur écrans moyens et grands */
+  "
+  style={{
+    backgroundImage: `url(${mapSvg})`,
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
+</div>
                 
 {/* Countries */}
 {countries.map((country) => (
