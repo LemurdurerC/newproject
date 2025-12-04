@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle, User, Mail, Car, Utensils } from 'lucide-react';
+import { Send, CheckCircle, User, Mail, MessageSquare, Car, Utensils } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const RSVP = () => {
@@ -11,6 +11,7 @@ const RSVP = () => {
     menu: 'classique',
     allergies: '',
     carpooling: 'no',
+    message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [whatsappLink, setWhatsappLink] = useState('');
@@ -50,6 +51,7 @@ const RSVP = () => {
           menu: formData.menu,
           allergies: formData.allergies,
           carpooling: formData.carpooling,
+          message: formData.message,
         }),
       });
 
@@ -91,6 +93,7 @@ const RSVP = () => {
       menu: formData.menu,
       allergies: formData.allergies,
       carpooling: formData.carpooling,
+      message: formData.message,
       submitted_at: new Date().toISOString(),
       submitted_date: new Date().toLocaleDateString('fr-FR'),
       submitted_time: new Date().toLocaleTimeString('fr-FR'),
@@ -114,6 +117,7 @@ const RSVP = () => {
       menu: formData.menu,
       allergies: formData.allergies,
       carpooling: formData.carpooling,
+      message: formData.message,
     });
     setWhatsappLink('https://chat.whatsapp.com/L6kszCLU8MR9amANYZYAGW');
   };
@@ -323,7 +327,7 @@ const RSVP = () => {
                       </div>
                       <div>
                         <span className="text-gray-700 font-medium block">Menu Jardin</span>
-                        <p className="text-sm text-gray-500 leading-tight">Végétarien</p>
+                        <p className="text-sm text-gray-500 leading-tight">Végétarien, légumes de saison, créatif</p>
                       </div>
                     </label>
                   </div>
@@ -395,6 +399,20 @@ const RSVP = () => {
                   </div>
                 </div>
 
+                <div>
+                  <label className="flex items-center text-gray-700 font-medium mb-3">
+                    <MessageSquare className="w-5 h-5 mr-2 text-purple-500" />
+                    Message pour les mariés (optionnel)
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={3}
+                    placeholder="Un petit mot pour Simon & Talia..."
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 resize-none"
+                  />
+                </div>
               </>
             )}
 
