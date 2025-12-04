@@ -131,15 +131,19 @@ const RSVP = () => {
 
 
   if (isSubmitted) {
+    const isAttending = formData.attendance === 'yes';
     return (
       <section id="rsvp" className="py-20 bg-gradient-to-br from-purple-50 via-rose-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-8 animate-bounce" />
+          <CheckCircle className={`w-20 h-20 mx-auto mb-8 animate-bounce ${isAttending ? 'text-green-500' : 'text-gray-400'}`} />
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             {t('rsvp.success')}
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Nous avons reçu votre confirmation et nous réjouissons de célébrer avec vous !
+            {isAttending
+              ? 'Nous avons reçu votre confirmation et nous réjouissons de célébrer avec vous !'
+              : 'Nous sommes navré de votre absence'
+            }
           </p>
 
          
