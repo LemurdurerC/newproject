@@ -399,17 +399,7 @@ const RSVP = () => {
                   </div>
                 </div>
 
-                <div>
-           
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={3}
-                    placeholder="Un petit mot pour Simon & Talia..."
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 resize-none"
-                  />
-                </div>
+      
               </>
             )}
 
