@@ -327,7 +327,7 @@ const RSVP = () => {
                       </div>
                       <div>
                         <span className="text-gray-700 font-medium block">Menu Jardin</span>
-                        <p className="text-sm text-gray-500 leading-tight">Végétarien, légumes de saison, créatif</p>
+                        
                       </div>
                     </label>
                   </div>
