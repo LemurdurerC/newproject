@@ -39,7 +39,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed md:bg-fixed bg-no-repeat"
         style={{
-          backgroundImage: 'url(/6.png)',
+          backgroundImage: 'url(https://mariage-simon-talia.bolt.host/6.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
