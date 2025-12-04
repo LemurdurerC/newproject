@@ -247,7 +247,7 @@ const RSVP = () => {
                       <div className="w-full h-full rounded-full bg-white transform scale-50"></div>
                     )}
                   </div>
-                  <span className="text-gray-700">Oui, je serai présent(e)</span>
+                  <span className="text-gray-700">Oui, je serai présent.e</span>
                 </label>
                 <label className="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-red-50 transition-colors duration-200">
                   <input
@@ -267,7 +267,7 @@ const RSVP = () => {
                       <div className="w-full h-full rounded-full bg-white transform scale-50"></div>
                     )}
                   </div>
-                  <span className="text-gray-700">Désolé(e), je ne peux pas venir</span>
+                  <span className="text-gray-700">Désolé.e, je ne peux pas venir</span>
                 </label>
               </div>
             </div>
