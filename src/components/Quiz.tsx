@@ -15,12 +15,12 @@ const Quiz = () => {
 
   const questions = [
     {
-      question: "Quelle est la date de votre rencontre ?",
+      question: "Quelle est la date de notre rencontre ?",
       options: ["Juillet 2014", "Juillet 2015", "Juillet 2016", "Juillet 2017"],
       correct: 0
     },
     {
-      question: "Quand avez-vous emménagé ensemble ?",
+      question: "Quand as-t-on emménagé ensemble ?",
       options: ["Septembre 2020", "Septembre 2021", "Juin 2022", "Juin 2023"],
       correct: 1
     },
@@ -30,12 +30,12 @@ const Quiz = () => {
       correct: 2
     },
     {
-      question: "Quel est votre jeu de société préféré ? (On sait ça change de temps en temps)",
+      question: "Quel est votre jeu de société préféré ?",
       options: ["Splendor", "The Crew", "Unlock", "7 Wonders Duel"],
       correct: 3
     },
     {
-      question: "Dans quelle ville n'avez-vous pas fait d'escape game parmi les villes suivantes ?",
+      question: "Dans quelle ville n'a-t-on pas fait d'escape game parmi les villes suivantes ?",
       options: ["Lisbonne", "Prague", "Vilnius", "Zagreb"],
       correct: 1
     },
@@ -50,7 +50,7 @@ const Quiz = () => {
       correct: 2
     },
     {
-      question: "Combien de pays avez-vous visité ensemble en Europe (en comptant la France) ?",
+      question: "Combien de pays as-t-on visité ensemble en Europe (en comptant la France) ?",
       options: ["13 pays", "15 pays", "17 pays", "19 pays"],
       correct: 3
     }
