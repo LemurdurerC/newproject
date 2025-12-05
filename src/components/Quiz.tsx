@@ -30,7 +30,7 @@ const Quiz = () => {
       correct: 2
     },
     {
-      question: "Quel est votre jeu de société préféré ?",
+      question: "Quel est votre jeu de société préféré ? (On sait, ça change tout le temps)",
       options: ["Splendor", "The Crew", "Unlock", "7 Wonders Duel"],
       correct: 3
     },
@@ -41,7 +41,7 @@ const Quiz = () => {
     },
     {
       question: "A quelle altitude Simon a-t-il fait sa demande en mariage ?",
-      options: ["35m", "1,909m", "3,776m", "8,849m"],
+      options: ["35m", "1 909m", "3 776m", "8 849m"],
       correct: 2
     },
     {
