@@ -38,21 +38,23 @@ const RSVP = () => {
       const apiUrl = `${supabaseUrl}/functions/v1/rsvp-mysql`;
       addDebug(`URL: ${apiUrl}`);
 
+      const dataToSend = {
+        name: formData.name,
+        email: formData.email,
+        attendance: formData.attendance,
+        menu: formData.attendance === 'yes' ? formData.menu : null,
+        allergies: formData.attendance === 'yes' ? formData.allergies : '',
+        carpooling: formData.attendance === 'yes' ? formData.carpooling : 'no',
+        message: formData.message,
+      };
+
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'apikey': supabaseKey,
         },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          attendance: formData.attendance,
-          menu: formData.menu,
-          allergies: formData.allergies,
-          carpooling: formData.carpooling,
-          message: formData.message,
-        }),
+        body: JSON.stringify(dataToSend),
       });
 
       addDebug(`Réponse: ${response.status} ${response.statusText}`);

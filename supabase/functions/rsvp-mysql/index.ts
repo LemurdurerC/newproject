@@ -134,7 +134,7 @@ Deno.serve(async (req: Request) => {
           rsvpData.attendance,
           rsvpData.menu || null,
           rsvpData.allergies || null,
-          rsvpData.carpooling || 'no',
+          rsvpData.attendance === 'no' ? null : (rsvpData.carpooling || 'no'),
           rsvpData.message || null,
         ]
       );
