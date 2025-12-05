@@ -307,6 +307,7 @@ const RSVP = () => {
                         <span className="text-gray-700 font-medium block">Menu Classique</span>
                         <p className="text-sm text-gray-500 leading-tight">Viande, poisson, accompagnements traditionnels</p>
                       </div>
+                        </div>
                     </label>
                     <label className="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
                       <input
