@@ -302,6 +302,7 @@ const RSVP = () => {
                           <div className="w-full h-full rounded-full bg-white transform scale-50"></div>
                         )}
                       </div>
+                      <div className="min-w-0">
                       <div>
                         <span className="text-gray-700 font-medium block">Menu Classique</span>
                         <p className="text-sm text-gray-500 leading-tight">Viande, poisson, accompagnements traditionnels</p>
