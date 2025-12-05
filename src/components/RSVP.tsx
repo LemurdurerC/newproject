@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle, User, Mail, MessageSquare, Car, Utensils } from 'lucide-react';
+import { Send, CheckCircle, User, Mail, MessageSquare, Car, Utensils, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const RSVP = () => {
