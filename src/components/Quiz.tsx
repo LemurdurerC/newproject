@@ -50,7 +50,7 @@ const Quiz = () => {
       correct: 2
     },
     {
-      question: "Combien de pays as-t-on visité ensemble en Europe (en comptant la France) ?",
+      question: "Combien de pays a-t-on visité ensemble en Europe (en comptant la France) ?",
       options: ["13 pays", "15 pays", "17 pays", "19 pays"],
       correct: 3
     }
