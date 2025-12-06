@@ -27,7 +27,7 @@ const Quiz = () => {
     {
       question: "Quel est le nombre total de jeux de cartes dans la collection ?",
       options: ["101 – 150", "151 – 200", "201 – 250", "251 - 300"],
-      correct: 2
+      correct: 3
     },
     {
       question: "Quel est votre jeu de société préféré ? (On sait, ça change tout le temps)",
