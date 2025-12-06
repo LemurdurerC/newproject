@@ -273,7 +273,7 @@ const Quizz = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Quizzd des Mariés
+            Quizz des Mariés
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Quizzd des mariés - à quel point nous connaissez-vous ?
