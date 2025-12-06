@@ -237,7 +237,7 @@ const Quiz = () => {
             <p className="text-xl text-gray-600">
               {score >= 7 ? "Excellent ! Vous nous connaissez par coeur !" :
                score >= 4 ? "Bien joué ! Vous nous connaissez bien." :
-               "Pas mal ! Merci d'avoir jouer."}
+               "Pas mal ! Merci d'avoir joué."}
             </p>
           </div>
 
