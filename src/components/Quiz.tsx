@@ -20,7 +20,7 @@ const Quiz = () => {
       correct: 0
     },
     {
-      question: "Quand as-t-on emménagé ensemble ?",
+      question: "Quand a-t-on emménagé ensemble ?",
       options: ["Septembre 2020", "Septembre 2021", "Juin 2022", "Juin 2023"],
       correct: 1
     },
