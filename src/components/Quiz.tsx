@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Brain, Trophy, Heart, Send, CheckCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const Quiz = () => {
+const Quizz = () => {
   const { t } = useLanguage();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
