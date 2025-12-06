@@ -164,7 +164,7 @@ const Quiz = () => {
               Quiz des Mariés
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Quizz des mariés - à quel point nous connaissez-vous ?
+              Quiz des mariés - à quel point nous connaissez-vous ?
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full"></div>
           </div>
@@ -276,7 +276,7 @@ const Quiz = () => {
             Quiz des Mariés
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Quizz des mariés - à quel point nous connaissez-vous ?
+            Quiz des mariés - à quel point nous connaissez-vous ?
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full"></div>
         </div>
