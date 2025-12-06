@@ -235,9 +235,9 @@ const Quiz = () => {
               {score}/{questions.length}
             </div>
             <p className="text-xl text-gray-600">
-              {score >= 6 ? "Excellent ! Vous connaissez très bien Simon & Talia !" :
-               score >= 4 ? "Bien joué ! Vous en savez pas mal sur nos mariés." :
-               "Pas mal ! Il vous reste encore des choses à découvrir sur Simon & Talia."}
+              {score >= 7 ? "Excellent ! Vous nous connaissez par coeur !" :
+               score >= 4 ? "Bien joué ! Vous nous connaissez bien." :
+               "Pas mal ! Merci d'avoir jouer."}
             </p>
           </div>
 
