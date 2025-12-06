@@ -35,7 +35,7 @@ const Quiz = () => {
       correct: 3
     },
     {
-      question: "Dans quelle ville n'a-t-on pas fait d'escape game parmi les villes suivantes ?",
+      question: "Dans quelle ville n'a-t-on pas fait d'Escape Game parmi les villes suivantes ?",
       options: ["Lisbonne", "Prague", "Vilnius", "Zagreb"],
       correct: 1
     },
