@@ -45,7 +45,7 @@ const Quiz = () => {
       correct: 2
     },
     {
-      question: "Si Simon quittait son travail, que préférerait-il ouvrir ?",
+      question: "Si Simon quittait son travail, quel type d'établissement préferait-il ouvrir ?",
       options: ["Un escape game", "Une cave à vodka", "Un bar à jeux", "Une librairie franco-japonaise"],
       correct: 2
     },
