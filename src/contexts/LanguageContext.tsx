@@ -19,7 +19,7 @@ const translations = {
     'nav.venue': 'Lieu & Logistique',
     'nav.rsvp': 'RSVP',
     'nav.registry': 'Liste de Mariage',
-    'nav.quiz': 'Quiz',
+    'nav.quiz': 'Quizz',
     'nav.gallery': 'Galerie',
     
     // Hero
