@@ -273,10 +273,10 @@ const Quiz = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Quiz des Mariés
+            Quizz des Mariés
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Quiz des mariés - à quel point nous connaissez-vous ?
+            Quizz des mariés - à quel point nous connaissez-vous ?
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full"></div>
         </div>
