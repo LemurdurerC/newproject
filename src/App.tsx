@@ -25,7 +25,7 @@ function App() {
           <Venue />
           <RSVP />
           <Registry />
-          <Quiz />
+          <Quizz />
           <Gallery />
         </main>
         <Footer />
