@@ -43,13 +43,7 @@ const Gallery = () => {
 
           <div className="bg-white rounded-3xl p-12 shadow-xl text-center max-w-md mx-auto">
             <Lock className="w-16 h-16 text-purple-400 mx-auto mb-6" />
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Accès Protégé
-            </h3>
-            <p className="text-gray-600 mb-8">
-              Cette galerie est réservée à nos invités. 
-              Utilisez le mot de passe qui vous a été communiqué.
-            </p>
+            
             
             <form onSubmit={handlePasswordSubmit} className="space-y-6">
               <input
