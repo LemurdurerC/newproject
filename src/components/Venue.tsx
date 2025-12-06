@@ -7,7 +7,7 @@ const Venue = () => {
 
   const hotels = [
     {
-      name: 'La Boule d’Or',
+      name: 'La Boule d’Or - Auberge Créative',
       rating: 4,
       price: '100 – 115€ la chambre',
       distance: '16km du domaine - 17 minutes en voiture',
