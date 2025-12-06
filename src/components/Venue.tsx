@@ -11,7 +11,7 @@ const Venue = () => {
       rating: 4,
       price: '100 – 115€ la chambre',
       distance: '16km du domaine - 17 minutes en voiture',
-      description: 'Auberge créative',
+      description: '',
       link: 'https://www.booking.com/hotel/fr/la-boule-d-39-or-clamecy.en-gb.html?aid=303948&label=merry-sur-yonne-a%2ALgjn5E4J3b2ny89iQspwS294441456633%3Apl%3Ata%3Ap12%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395719376965%3Akwd-13069270641%3Alp9196363%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=fa99be4ac6a3b15b27500150fc850814&all_sr_blocks=1014684006_374021643_0_1_0&checkin=2026-07-11&checkout=2026-07-12&dest_id=-1451103&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1014684006_374021643_0_1_0&hpos=1&matching_block_id=1014684006_374021643_0_1_0&nflt=ht_id%3D1100&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1014684006_374021643_0_1_0__9765&srepoch=1761153813&srpvid=4cfa7a1f2815049d&type=total&ucfs=1&',
     },
     {
