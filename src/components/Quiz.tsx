@@ -40,7 +40,7 @@ const Quiz = () => {
       correct: 1
     },
     {
-      question: "A quelle altitude Talia a-t-elle dit : Oui !",
+      question: "A quelle altitude Talia a-t-elle dit oui ?",
       options: ["35m", "1 909m", "3 776m", "8 849m"],
       correct: 2
     },
