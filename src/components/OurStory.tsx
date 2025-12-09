@@ -110,7 +110,16 @@ const countries = [
              {/* Fixed background map */}
 
 
-<div className=" absolute inset-0 bg-no-repeat bg-center bg-contain /* Taille normale sur toutes les résolutions */ " style={{ backgroundImage: url(${mapSvg}), }} >
+  <div
+    className="
+      absolute inset-0 bg-no-repeat bg-center
+      bg-contain
+    "
+    style={{
+      backgroundImage: `url(${mapSvg})`,
+    }}
+  >
+
   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
 </div>
 
