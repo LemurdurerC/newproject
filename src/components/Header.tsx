@@ -24,7 +24,6 @@ const Header = () => {
     { key: 'nav.rsvp', href: '#rsvp' },
     { key: 'nav.registry', href: '#registry' },
     { key: 'nav.quiz', href: '#quiz' },
-    { key: 'nav.gallery', href: '#gallery' },
   ];
 
   const scrollToSection = (href: string) => {
