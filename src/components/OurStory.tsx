@@ -236,12 +236,12 @@ const OurStory = () => {
             {/* Close button */}
             <button
               onClick={() => setIsExpanded(false)}
-              className="absolute top-4 right-4 bg-rose-500 text-white px-3 py-1 rounded-lg shadow flex items-center gap-1"
+              className="absolute top-4 right-4 bg-rose-500 text-white px-3 py-1 rounded-lg shadow flex items-center gap-1 z-50"
             >
               <X className="w-4 h-4" /> Fermer
             </button>
 
-            <div className="mt-10">
+            <div className="mt-10 pt-4">
               <MapBlock isMobile={true} />
               <CountryInfoBlock isMobile={true} />
             </div>
