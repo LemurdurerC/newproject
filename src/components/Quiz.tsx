@@ -238,10 +238,7 @@ const Quiz = () => {
     return (
       <section id="quiz" className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-rose-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
 
-          </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
