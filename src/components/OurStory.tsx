@@ -86,70 +86,45 @@ const countries = [
 
 
 
-return (
-  <section id="story" className="py-20 bg-gradient-to-br from-rose-50 via-purple-50 to-orange-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          Nos Voyages Ensemble
-        </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-purple-400 mx-auto mt-6 rounded-full"></div>
-      </div>
-
-      {/* Interactive Map */}
-      <div>
-        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Découvrez les pays que nous avons explorés main dans la main
-        </p>
-
-        <div className="bg-white rounded-3xl p-8 shadow-xl">
-          <div className="relative">
-
-            {/* World Map Background */}
-            <div
-              className="
-                relative 
-                w-full 
-                aspect-[3/2]
-                max-w-5xl 
-                mx-auto 
-                bg-gradient-to-br 
-                from-blue-50 
-                to-green-50 
-                rounded-2xl 
-                overflow-hidden
-              "
-            >
-              {/* Zoom sur mobile */}
-              <div className="absolute inset-0 origin-center scale-125 md:scale-100 transition-transform duration-500">
-
-                {/* Map SVG en background */}
-                <div
-                  className="
-                    absolute inset-0 
-                    bg-no-repeat 
-                    bg-center 
-                    bg-contain
-                  "
-                  style={{
-                    backgroundImage: `url(${mapSvg})`,
-                  }}
-                >
-                  {/* Light overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
+  return (
+    <section id="story" className="py-20 bg-gradient-to-br from-rose-50 via-purple-50 to-orange-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Nos Voyages Ensemble
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-purple-400 mx-auto mt-6 rounded-full"></div>
         </div>
 
-      </div>
-    </div>
-  </section>
-);
+        {/* Interactive Map */}
+        <div>
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Découvrez les pays que nous avons explorés main dans la main
+          </p>
+          
+          <div className="bg-white rounded-3xl p-8 shadow-xl">
+            <div className="relative">
+              {/* World Map Background */}
+              <div className="relative w-full aspect-[3/2] max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden"
+     style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}>
+             {/* Fixed background map */}
+{/* Wrapper qui gère le zoom */}
+<div className="absolute inset-0 origin-center scale-125 md:scale-100 transition-transform duration-500">
 
+  <div
+    className="
+      absolute inset-0 bg-no-repeat bg-center
+      bg-contain
+    "
+    style={{
+      backgroundImage: `url(${mapSvg})`,
+    }}
+  >
+  </div>
+
+</div>
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
+</div>
 
                 
 {/* Countries */}
