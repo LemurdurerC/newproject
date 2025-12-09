@@ -115,13 +115,21 @@ const OurStory = () => {
           }
         >
           <div
-            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
+            className={`rounded-full transition-all duration-300 ${
               hoveredCountry === country.code
-                ? 'bg-rose-500 scale-150 shadow-lg'
-                : 'bg-purple-400 hover:bg-rose-400 hover:scale-125'
+                ? `bg-rose-500 shadow-lg ${
+                    isMobile ? 'w-4 h-4 scale-150' : 'w-5 h-5 scale-150'
+                  }`
+                : `bg-purple-400 hover:bg-rose-400 ${
+                    isMobile ? 'w-2 h-2 hover:scale-125' : 'w-3 h-3 hover:scale-125'
+                  }`
             }`}
           >
-            <div className="absolute inset-0 rounded-full animate-ping bg-rose-400 opacity-20"></div>
+            <div
+              className={`absolute inset-0 rounded-full animate-ping bg-rose-400 opacity-20 ${
+                isMobile ? 'w-4 h-4' : 'w-5 h-5'
+              }`}
+            ></div>
           </div>
         </div>
       ))}
