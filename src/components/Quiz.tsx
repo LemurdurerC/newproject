@@ -95,7 +95,7 @@ const Quiz = () => {
     };
 
     try {
-      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/rsvp-mysql/quiz`;
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/quiz`;
 
       const response = await fetch(apiUrl, {
         method: 'POST',
