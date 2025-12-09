@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { MapPin, Camera, X } from 'lucide-react';
+import { Heart, MapPin, Camera, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import mapSvg from './map.svg';
 
 const OurStory = () => {
   const { t } = useLanguage();
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false); // 🔥 Modal mobile
 
   const countries = [
     {
@@ -87,89 +87,52 @@ const OurStory = () => {
     },
   ];
 
-  // 🌐 Map interactive avec pan tactile mobile
-  const MapBlock = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [lastTouch, setLastTouch] = useState({ x: 0, y: 0 });
+  // 🔧 Petite fonction pour afficher la map (réutilisée dans la version desktop + modal)
+  const MapBlock = () => (
+    <div className="relative w-full aspect-[3/2] max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden"
+      style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}>
 
-    const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
-
-    const handleTouchStart = (e: React.TouchEvent) => {
-      const touch = e.touches[0];
-      setLastTouch({ x: touch.clientX, y: touch.clientY });
-    };
-
-    const handleTouchMove = (e: React.TouchEvent) => {
-      if (!isMobile) return;
-      const touch = e.touches[0];
-      const deltaX = touch.clientX - lastTouch.x;
-      const deltaY = touch.clientY - lastTouch.y;
-      setLastTouch({ x: touch.clientX, y: touch.clientY });
-
-      setPosition((prev) => ({
-        x: Math.min(120, Math.max(-120, prev.x + deltaX)),
-        y: Math.min(120, Math.max(-120, prev.y + deltaY)),
-      }));
-    };
-
-    return (
-      <div
-        className="relative w-full aspect-[3/2] max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden touch-pan-y"
-        style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}
-      >
-        {/* Draggable wrapper */}
+      {/* Background map */}
+      <div className="absolute inset-0 origin-center scale-125 md:scale-100 transition-transform duration-500">
         <div
-          className="absolute inset-0 transition-none"
-          style={{
-            transform: `translate(${position.x}px, ${position.y}px)`,
-          }}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-        >
-          {/* Background map */}
-          <div className="absolute inset-0 origin-center scale-125 md:scale-100">
-            <div
-              className="absolute inset-0 bg-no-repeat bg-center bg-contain"
-              style={{ backgroundImage: `url(${mapSvg})` }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
-          </div>
-
-          {/* Points interactifs */}
-          {countries.map((country) => (
-            <div
-              key={country.code}
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
-              style={{ left: `${country.x}%`, top: `${country.y}%` }}
-              onClick={() =>
-                setHoveredCountry(
-                  hoveredCountry === country.code ? null : country.code
-                )
-              }
-            >
-              <div
-                className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
-                  hoveredCountry === country.code
-                    ? 'bg-rose-500 scale-150 shadow-lg'
-                    : 'bg-purple-400 hover:bg-rose-400 hover:scale-125'
-                }`}
-              >
-                <div className="absolute inset-0 rounded-full animate-ping bg-rose-400 opacity-20"></div>
-              </div>
-            </div>
-          ))}
-        </div>
+          className="absolute inset-0 bg-no-repeat bg-center bg-contain"
+          style={{ backgroundImage: `url(${mapSvg})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
       </div>
-    );
-  };
 
-  // 🖼 Bloc image / info pays
+      {/* Points */}
+      {countries.map((country) => (
+        <div
+          key={country.code}
+          className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
+          style={{ left: `${country.x}%`, top: `${country.y}%` }}
+          onClick={() =>
+            setHoveredCountry(hoveredCountry === country.code ? null : country.code)
+          }
+        >
+          <div
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
+              hoveredCountry === country.code
+                ? 'bg-rose-500 scale-150 shadow-lg'
+                : 'bg-purple-400 hover:bg-rose-400 hover:scale-125'
+            }`}
+          >
+            <div className="absolute inset-0 rounded-full animate-ping bg-rose-400 opacity-20"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
+  // 🔧 Bloc image / détails pays
   const CountryInfoBlock = () => (
     <div className="mt-8 bg-gradient-to-br from-purple-50 to-rose-50 rounded-2xl p-6 min-h-[300px] transition-all duration-500">
       {hoveredCountry ? (
         (() => {
           const country = countries.find((c) => c.code === hoveredCountry);
           if (!country) return null;
+
           return (
             <div className="flex flex-col md:flex-row gap-6 items-center animate-in fade-in">
               <div className="w-full md:w-1/2 h-64 bg-gradient-to-br from-purple-100 via-rose-100 to-orange-100 rounded-xl overflow-hidden relative shadow-lg">
@@ -184,8 +147,7 @@ const OurStory = () => {
                   loading="eager"
                   onLoad={(e) => {
                     const target = e.target as HTMLImageElement;
-                    const fallback =
-                      target.parentElement?.querySelector('.fallback-emoji');
+                    const fallback = target.parentElement?.querySelector('.fallback-emoji');
                     if (fallback) {
                       (fallback as HTMLElement).style.display = 'none';
                     }
@@ -196,9 +158,7 @@ const OurStory = () => {
               </div>
 
               <div className="w-full md:w-1/2 text-center md:text-left">
-                <h3 className="text-3xl font-bold text-gray-800 mb-3">
-                  {country.name}
-                </h3>
+                <h3 className="text-3xl font-bold text-gray-800 mb-3">{country.name}</h3>
                 <p className="text-lg text-gray-600 mb-4">{country.description}</p>
                 <div className="flex items-center justify-center md:justify-start text-purple-500">
                   <Camera className="w-5 h-5 mr-2" />
@@ -224,8 +184,9 @@ const OurStory = () => {
   );
 
   return (
-    <section className="py-20 bg-gradient-to-br from-rose-50 via-purple-50 to-orange-50">
+    <section id="story" className="py-20 bg-gradient-to-br from-rose-50 via-purple-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Titre */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -253,6 +214,7 @@ const OurStory = () => {
         {/* MOBILE FULLSCREEN MODAL */}
         {isExpanded && (
           <div className="fixed inset-0 bg-white z-50 p-4 overflow-auto animate-in fade-in">
+            
             {/* Close button */}
             <button
               onClick={() => setIsExpanded(false)}
