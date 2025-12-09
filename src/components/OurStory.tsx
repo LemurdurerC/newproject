@@ -119,7 +119,8 @@ const countries = [
     style={{
       backgroundImage: `url(${mapSvg})`,
     }}
-  >
+  ></div>
+
 
   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
 </div>
