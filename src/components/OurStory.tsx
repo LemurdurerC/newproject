@@ -109,6 +109,7 @@ const countries = [
      style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}>
              {/* Fixed background map */}
 
+<div className="absolute inset-0 origin-center scale-125 md:scale-100 transition-transform duration-500">
 
   <div
     className="
