@@ -9,13 +9,82 @@ const OurStory = () => {
   const [isExpanded, setIsExpanded] = useState(false); // 🔥 Modal mobile
 
   const countries = [
-  { code: 'FR', x: 30, y: 72, … },
-  { code: 'IE', x: 21, y: 63, … },
-  { code: 'UK', x: 25, y: 58, … },
-  { code: 'DE', x: 37, y: 65, … },
-  { code: 'ES', x: 28, y: 85, … },
-  { code: 'IT', x: 38, y: 80, … },
-  { code: 'JP', x: 95, y: 30, … },
+  {
+    code: 'FR',
+    name: 'France',
+    x: 31,
+    y: 72,
+    image:
+      'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇫🇷',
+    landmark: '🗼',
+    description: 'La ville lumière et ses monuments emblématiques',
+  },
+  {
+    code: 'IE',
+    name: 'Ireland',
+    x: 21,
+    y: 64,
+    image:
+      'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇮🇪',
+    landmark: '☘️',
+    description: 'Les paysages verts et la culture irlandaise',
+  },
+  {
+    code: 'UK',
+    name: 'United Kingdom',
+    x: 25,
+    y: 58,
+    image:
+      'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇬🇧',
+    landmark: '🏰',
+    description: 'Histoire, culture et charme britannique',
+  },
+  {
+    code: 'ES',
+    name: 'Spain',
+    x: 28,
+    y: 84,
+    image: '/tt.jpg',
+    flag: '🇪🇸',
+    landmark: '🏛️',
+    description: 'Soleil, architecture et saveurs espagnoles',
+  },
+  {
+    code: 'DE',
+    name: 'Germany',
+    x: 37,
+    y: 65,
+    image:
+      'https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇩🇪',
+    landmark: '🏰',
+    description: 'Châteaux médiévaux et culture allemande',
+  },
+  {
+    code: 'IT',
+    name: 'Italy',
+    x: 39,
+    y: 81,
+    image:
+      'https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇮🇹',
+    landmark: '🍕',
+    description: 'Art, histoire et gastronomie italienne',
+  },
+  {
+    code: 'JP',
+    name: 'Japan',
+    x: 96,
+    y: 28,
+    image:
+      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇯🇵',
+    landmark: '🗻',
+    description: 'Tradition japonaise et modernité',
+  },
 ];
 
 
