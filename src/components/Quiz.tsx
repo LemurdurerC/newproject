@@ -240,13 +240,7 @@ const Quiz = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-  
-            <p className="text-xl text-gray-600">
-              {
-               score >= 6 ? "Excellent ! Vous nous connaissez par coeur !" :
-               score >= 3 ? "Bien joué ! Vous nous connaissez bien." :
-               "Pas mal ! Merci d'avoir joué."}
-            </p>
+
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-xl">
