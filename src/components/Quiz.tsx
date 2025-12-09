@@ -240,12 +240,7 @@ const Quiz = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Résultats du Quiz
-            </h2>
-            <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-4">
-              {score}/{questions.length}
-            </div>
+  
             <p className="text-xl text-gray-600">
               {
                score >= 6 ? "Excellent ! Vous nous connaissez par coeur !" :
