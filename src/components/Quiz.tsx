@@ -137,12 +137,24 @@ const Quiz = () => {
     return (
       <section id="quiz" className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-rose-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-8 animate-bounce" />
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Merci {userInfo.name} !
+          <Trophy className="w-20 h-20 text-yellow-500 mx-auto mb-8 animate-bounce" />
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            Bravo {userInfo.name} !
           </h2>
+          <div className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-8">
+            {score}/{questions.length}
+          </div>
+          <p className="text-2xl text-gray-700 font-semibold mb-6">
+            {
+              score === questions.length ? "Parfait ! Vous nous connaissez sur le bout des doigts !" :
+              score >= 6 ? "Excellent ! Vous nous connaissez par coeur !" :
+              score >= 4 ? "Bien joué ! Vous nous connaissez bien." :
+              score >= 2 ? "Pas mal ! Merci d'avoir joué." :
+              "Pas grave, maintenant vous nous connaîtrez mieux !"
+            }
+          </p>
           <p className="text-xl text-gray-600 mb-8">
-            Vos résultats ont été sauvegardés. Nous partagerons les scores avec tous les invités après le mariage !
+            Vos résultats ont été enregistrés. Nous partagerons le classement avec tous les invités après le mariage !
           </p>
           <button
             onClick={resetQuiz}
@@ -259,7 +271,7 @@ const Quiz = () => {
                   className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-rose-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  {isLoading ? 'Sauvegarde en cours...' : 'Sauvegarder mes Résultats'}
+                  {isLoading ? 'Envoi en cours...' : 'Envoyer mes réponses'}
                 </button>
               </div>
             </form>
