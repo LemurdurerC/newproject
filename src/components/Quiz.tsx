@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Brain, Trophy, Heart, Send, CheckCircle } from 'lucide-react';
+import { Brain, Trophy, Heart, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Quiz = () => {
@@ -12,6 +12,7 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const questions = [
     {
@@ -85,6 +86,7 @@ const Quiz = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
+    setError(null);
 
     const quizData = {
       name: userInfo.name,
@@ -110,14 +112,14 @@ const Quiz = () => {
 
       if (!response.ok) {
         console.error('Erreur lors de la sauvegarde:', result);
-        alert('Erreur lors de la sauvegarde des résultats');
+        setError('Erreur lors de la sauvegarde des résultats. Veuillez réessayer.');
       } else {
         console.log('Quiz results saved:', result);
         setIsSubmitted(true);
       }
     } catch (error) {
       console.error('Erreur:', error);
-      alert('Une erreur est survenue');
+      setError('Une erreur est survenue. Vérifiez votre connexion et réessayez.');
     } finally {
       setIsLoading(false);
     }
@@ -131,6 +133,7 @@ const Quiz = () => {
     setUserInfo({ name: '', email: '' });
     setScore(0);
     setIsSubmitted(false);
+    setError(null);
   };
 
   if (isSubmitted) {
@@ -249,6 +252,15 @@ const Quiz = () => {
                 <strong>{userInfo.name}</strong> ({userInfo.email})
               </p>
             </div>
+            {error && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-4">
+                <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+                <div className="flex-1">
+                  <p className="text-red-800 font-medium">Erreur</p>
+                  <p className="text-red-700 text-sm mt-1">{error}</p>
+                </div>
+              </div>
+            )}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="text-center">
                 <button
