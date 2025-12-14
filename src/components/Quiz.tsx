@@ -116,7 +116,7 @@ const Quiz = () => {
         return;
       }
 
-      if (!response.ok) {
+      if (!response.ok || !result?.success) {
         console.error('Erreur lors de la sauvegarde:', result);
         const errorMessage = result?.error || result?.details || 'Erreur lors de la sauvegarde des résultats.';
         setError(`${errorMessage} Veuillez réessayer.`);
