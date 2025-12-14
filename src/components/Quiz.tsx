@@ -108,18 +108,26 @@ const Quiz = () => {
         body: JSON.stringify(quizData),
       });
 
-      const result = await response.json();
+      let result;
+      try {
+        result = await response.json();
+      } catch {
+        setError('Erreur serveur: impossible de traiter la réponse. Veuillez réessayer.');
+        return;
+      }
 
       if (!response.ok) {
         console.error('Erreur lors de la sauvegarde:', result);
-        setError('Erreur lors de la sauvegarde des résultats. Veuillez réessayer.');
+        const errorMessage = result?.error || result?.details || 'Erreur lors de la sauvegarde des résultats.';
+        setError(`${errorMessage} Veuillez réessayer.`);
       } else {
         console.log('Quiz results saved:', result);
         setIsSubmitted(true);
       }
     } catch (error) {
       console.error('Erreur:', error);
-      setError('Une erreur est survenue. Vérifiez votre connexion et réessayez.');
+      const errorMessage = error instanceof Error ? error.message : 'Erreur inconnue';
+      setError(`Erreur de connexion: ${errorMessage} Vérifiez votre connexion Internet et réessayez.`);
     } finally {
       setIsLoading(false);
     }
