@@ -90,6 +90,7 @@ Deno.serve(async (req: Request) => {
     console.error("Error:", error);
     return new Response(
       JSON.stringify({
+        success: false,
         error: "Internal server error",
         details: error instanceof Error ? error.message : "Unknown error",
       }),
