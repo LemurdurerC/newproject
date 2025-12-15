@@ -34,8 +34,8 @@ const OurStory = () => {
   {
     code: 'UK',
     name: 'United Kingdom',
-    x: 25,
-    y: 58,
+    x: 30,
+    y: 68,
     image:
       'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇬🇧',
@@ -45,8 +45,8 @@ const OurStory = () => {
   {
     code: 'ES',
     name: 'Spain',
-    x: 35,
-    y: 100,
+    x: 28,
+    y: 89,
     image: '/tt.jpg',
     flag: '🇪🇸',
     landmark: '🏛️',
