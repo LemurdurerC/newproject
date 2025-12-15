@@ -121,7 +121,7 @@ const OurStory = () => {
   {
     code: 'GR',
     name: 'Grece',
-    x: 35,
+    x: 66,
     y: 71,
     image:
       'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
