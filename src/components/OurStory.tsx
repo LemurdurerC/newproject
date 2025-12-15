@@ -97,7 +97,6 @@ const OurStory = () => {
     description: 'Tradition japonaise et modernité',
   },
 ];
-];
 
 
   // 🔧 Petite fonction pour afficher la map (réutilisée dans la version desktop + modal)
