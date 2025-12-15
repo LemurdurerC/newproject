@@ -45,8 +45,8 @@ const OurStory = () => {
   {
     code: 'ES',
     name: 'Spain',
-    x: 28,
-    y: 89,
+    x: 35,
+    y: 100,
     image: '/tt.jpg',
     flag: '🇪🇸',
     landmark: '🏛️',
