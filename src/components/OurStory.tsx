@@ -199,7 +199,7 @@ const OurStory = () => {
     code: 'SV',
     name: 'Slovénie',
     x: 44,
-    y: 79,
+    y: 83,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇯🇵',
