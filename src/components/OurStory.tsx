@@ -177,7 +177,7 @@ const OurStory = () => {
     code: 'LT',
     name: 'Lettonie',
     x: 55,
-    y: 44,
+    y: 55,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇯🇵',
