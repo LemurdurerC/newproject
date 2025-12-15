@@ -56,7 +56,7 @@ const OurStory = () => {
     code: 'DE',
     name: 'Germany',
     x: 40,
-    y: 55,
+    y: 65,
     image:
       'https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇩🇪',
