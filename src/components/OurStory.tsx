@@ -66,7 +66,7 @@ const OurStory = () => {
   {
     code: 'IT',
     name: 'Italy',
-    x: 42,
+    x: 40,
     y: 87,
     image:
       'https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
