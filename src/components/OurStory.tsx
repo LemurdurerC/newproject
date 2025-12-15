@@ -13,7 +13,7 @@ const OurStory = () => {
     code: 'FR',
     name: 'France',
     x: 33,
-    y: 73,
+    y: 74,
     image:
       'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇫🇷',
