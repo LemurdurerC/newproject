@@ -154,7 +154,7 @@ const OurStory = () => {
   {
     code: 'CR',
     name: 'Croatie',
-    x: 55,
+    x: 66,
     y: 81,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
