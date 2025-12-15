@@ -88,7 +88,7 @@ const OurStory = () => {
   {
     code: 'HG',
     name: 'Hongrie',
-    x: 45,
+    x: 44,
     y: 78,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
