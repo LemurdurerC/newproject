@@ -78,7 +78,7 @@ const OurStory = () => {
     code: 'JP',
     name: 'Japan',
     x: 77,
-    y: 33,
+    y: 44,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇯🇵',
