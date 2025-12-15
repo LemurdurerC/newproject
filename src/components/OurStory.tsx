@@ -187,8 +187,8 @@ const OurStory = () => {
   {
     code: 'LTN',
     name: 'Lituanie',
-    x: 52,
-    y: 58,
+    x: 50,
+    y: 60,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇯🇵',
