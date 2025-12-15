@@ -22,7 +22,7 @@ const OurStory = () => {
   },
   {
     code: 'IE',
-    name: 'Ireland',
+    name: 'Irlande',
     x: 24,
     y: 66,
     image:
@@ -33,18 +33,17 @@ const OurStory = () => {
   },
   {
     code: 'UK',
-    name: 'United Kingdom',
+    name: 'Angleterre',
     x: 30,
     y: 68,
-    image:
-      'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    image: '/angleterre.jpg',
     flag: '🇬🇧',
     landmark: '🏰',
     description: 'Histoire, culture et charme britannique',
   },
   {
     code: 'ES',
-    name: 'Spain',
+    name: 'Espagne',
     x: 28,
     y: 89,
     image: '/tt.jpg',
@@ -54,33 +53,33 @@ const OurStory = () => {
   },
   {
     code: 'DE',
-    name: 'Germany',
+    name: 'Allemagne',
     x: 42,
     y: 67,
     image:
-      'https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/allemagne.jpg',
     flag: '🇩🇪',
     landmark: '🏰',
     description: 'Châteaux médiévaux et culture allemande',
   },
   {
     code: 'IT',
-    name: 'Italy',
+    name: 'Italie',
     x: 41,
     y: 84,
     image:
-      'https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/italie.jpg',
     flag: '🇮🇹',
     landmark: '🍕',
     description: 'Art, histoire et gastronomie italienne',
   },
   {
     code: 'JP',
-    name: 'Japan',
+    name: 'Japon',
     x: 77,
     y: 40,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/japon.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -91,7 +90,7 @@ const OurStory = () => {
     x: 44,
     y: 79,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/hongrie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -102,7 +101,7 @@ const OurStory = () => {
     x: 44,
     y: 72,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/tchequie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -113,7 +112,7 @@ const OurStory = () => {
     x: 35,
     y: 71,
     image:
-      'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/belgique.jpg',
     flag: '🇫🇷',
     landmark: '🗼',
     description: 'La ville lumière et ses monuments emblématiques',
@@ -124,7 +123,7 @@ const OurStory = () => {
     x: 52,
     y: 94,
     image:
-      'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/grece.jpg',
     flag: '🇫🇷',
     landmark: '🗼',
     description: 'La ville lumière et ses monuments emblématiques',
@@ -135,7 +134,7 @@ const OurStory = () => {
     x: 44,
     y: 81,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/montenegro.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -146,7 +145,7 @@ const OurStory = () => {
     x: 55,
     y: 81,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/macedoine_du_nord.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -157,7 +156,7 @@ const OurStory = () => {
     x: 66,
     y: 81,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/croatie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -168,7 +167,7 @@ const OurStory = () => {
     x: 22,
     y: 66,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/portugal.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -179,7 +178,7 @@ const OurStory = () => {
     x: 52,
     y: 56,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/lettonie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -190,7 +189,7 @@ const OurStory = () => {
     x: 50,
     y: 60,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/lituanie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -201,7 +200,7 @@ const OurStory = () => {
     x: 44,
     y: 83,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/slovenie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
@@ -212,7 +211,7 @@ const OurStory = () => {
     x: 50,
     y: 83,
     image:
-      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+      '/serbie.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
