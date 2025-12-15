@@ -129,6 +129,17 @@ const OurStory = () => {
     landmark: '🗼',
     description: 'La ville lumière et ses monuments emblématiques',
   },
+  {
+    code: 'MN',
+    name: 'Monténégro',
+    x: 44,
+    y: 79,
+    image:
+      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇯🇵',
+    landmark: '🗻',
+    description: 'Tradition japonaise et modernité',
+  },
 ];
 
 
