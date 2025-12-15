@@ -24,7 +24,7 @@ const OurStory = () => {
     code: 'IE',
     name: 'Ireland',
     x: 24,
-    y: 64,
+    y: 68,
     image:
       'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
     flag: '🇮🇪',
