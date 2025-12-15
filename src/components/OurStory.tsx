@@ -107,6 +107,17 @@ const OurStory = () => {
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
   },
+  {
+    code: 'BE',
+    name: 'Belgique',
+    x: 33,
+    y: 75,
+    image:
+      'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇫🇷',
+    landmark: '🗼',
+    description: 'La ville lumière et ses monuments emblématiques',
+  },
 ];
 
 
