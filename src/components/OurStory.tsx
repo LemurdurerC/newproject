@@ -143,7 +143,7 @@ const OurStory = () => {
   {
     code: 'MCN',
     name: 'Macédoine du Nord',
-    x: 44,
+    x: 55,
     y: 81,
     image:
       'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
