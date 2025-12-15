@@ -96,6 +96,17 @@ const OurStory = () => {
     landmark: '🗻',
     description: 'Tradition japonaise et modernité',
   },
+  {
+    code: 'RT',
+    name: 'Tchéquie',
+    x: 44,
+    y: 84,
+    image:
+      'https://images.pexels.com/photos/2901269/pexels-photo-2901269.jpeg?auto=compress&cs=tinysrgb&w=800&h=600',
+    flag: '🇯🇵',
+    landmark: '🗻',
+    description: 'Tradition japonaise et modernité',
+  },
 ];
 
 
