@@ -17,8 +17,8 @@ const countries: Country[] = [
   {
     code: 'FR',
     name: 'France',
-    x: 71.2,
-    y: 140.1,
+    x: 60.9,
+    y: 136.0,
     image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg',
     flag: '🇫🇷',
     landmark: '🗼',
@@ -27,8 +27,8 @@ const countries: Country[] = [
   {
     code: 'IE',
     name: 'Irlande',
-    x: 51.8,
-    y: 123.3,
+    x: 40.0,
+    y: 119.0,
     image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg',
     flag: '🇮🇪',
     landmark: '☘️',
@@ -37,8 +37,8 @@ const countries: Country[] = [
   {
     code: 'UK',
     name: 'Angleterre',
-    x: 64.8,
-    y: 126.9,
+    x: 46.6,
+    y: 101.5,
     image: '/angleterre.jpg',
     flag: '🇬🇧',
     landmark: '🏰',
@@ -47,8 +47,8 @@ const countries: Country[] = [
   {
     code: 'ES',
     name: 'Espagne',
-    x: 60.4,
-    y: 166.3,
+    x: 48.9,
+    y: 157.5,
     image: '/tt.jpg',
     flag: '🇪🇸',
     landmark: '🏛️',
@@ -57,8 +57,8 @@ const countries: Country[] = [
   {
     code: 'DE',
     name: 'Allemagne',
-    x: 90.7,
-    y: 125.2,
+    x: 71.7,
+    y: 120.4,
     image: '/allemagne.jpg',
     flag: '🇩🇪',
     landmark: '🏰',
@@ -67,8 +67,8 @@ const countries: Country[] = [
   {
     code: 'IT',
     name: 'Italie',
-    x: 88.6,
-    y: 157.0,
+    x: 72.8,
+    y: 149.5,
     image: '/italie.jpg',
     flag: '🇮🇹',
     landmark: '🍕',
@@ -87,8 +87,8 @@ const countries: Country[] = [
   {
     code: 'BE',
     name: 'Belgique',
-    x: 75.5,
-    y: 121.8,
+    x: 62.1,
+    y: 129.0,
     image: '/belgique.jpg',
     flag: '🇧🇪',
     landmark: '🧇',
@@ -97,8 +97,8 @@ const countries: Country[] = [
   {
     code: 'PT',
     name: 'Portugal',
-    x: 49.5,
-    y: 142.3,
+    x: 31.4,
+    y: 163.7,
     image: '/portugal.jpg',
     flag: '🇵🇹',
     landmark: '🏖️',
@@ -107,8 +107,8 @@ const countries: Country[] = [
   {
     code: 'GR',
     name: 'Grèce',
-    x: 113.1,
-    y: 175.4,
+    x: 107.2,
+    y: 170.1,
     image: '/grece.jpg',
     flag: '🇬🇷',
     landmark: '🏛️',
@@ -117,8 +117,8 @@ const countries: Country[] = [
   {
     code: 'CR',
     name: 'Croatie',
-    x: 112.4,
-    y: 148.8,
+    x: 96.1,
+    y: 147.6,
     image: '/croatie.jpg',
     flag: '🇭🇷',
     landmark: '🏰',
@@ -127,14 +127,15 @@ const countries: Country[] = [
   {
     code: 'HG',
     name: 'Hongrie',
-    x: 101.9,
-    y: 145.6,
+    x: 97.3,
+    y: 142.1,
     image: '/hongrie.jpg',
     flag: '🇭🇺',
     landmark: '🏰',
     description: 'Culture et patrimoine hongrois',
   },
 ];
+
 
 const OurStory = () => {
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
