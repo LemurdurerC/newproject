@@ -57,7 +57,10 @@ const OurStory = () => {
           <div
             key={country.code}
             className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
-            style={{ left: `${left}%`, top: `${top}%` }}
+style={{
+  left: isMobile ? `calc(${left}% - 10px)` : `${left}%`,
+  top: `${top}%`,
+}}
             onClick={() =>
               setHoveredCountry(hoveredCountry === country.code ? null : country.code)
             }
