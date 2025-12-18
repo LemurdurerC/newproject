@@ -58,7 +58,7 @@ const OurStory = () => {
             key={country.code}
             className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group z-10"
 style={{
-  left: isMobile ? `calc(${left}% - 10px)` : `${left}%`,
+  left: isMobile ? `calc(${left}% - 50px)` : `${left}%`,
   top: `${top}%`,
 }}
             onClick={() =>
