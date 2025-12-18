@@ -60,7 +60,7 @@ const OurStory = () => {
         {/* MAP SVG */}
         <svg
           viewBox="0 0 215.86 186.82"
-          className="w-full max-w-5xl mx-auto h-auto rounded-2xl shadow-lg bg-white"
+          className="w-full max-w-5xl mx-auto h-auto rounded-2xl shadow-lg bg-white bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden"
           preserveAspectRatio="xMidYMid meet"
         >
           {/* Carte */}
