@@ -17,8 +17,8 @@ const countries: Country[] = [
   {
     code: 'FR',
     name: 'France',
-    x: 60.9,
-    y: 136.0,
+    x: 64.0,
+    y: 145.0,
     image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg',
     flag: '🇫🇷',
     landmark: '🗼',
@@ -27,8 +27,8 @@ const countries: Country[] = [
   {
     code: 'IE',
     name: 'Irlande',
-    x: 40.0,
-    y: 119.0,
+    x: 36.0,
+    y: 121.0,
     image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg',
     flag: '🇮🇪',
     landmark: '☘️',
@@ -37,8 +37,8 @@ const countries: Country[] = [
   {
     code: 'UK',
     name: 'Angleterre',
-    x: 46.6,
-    y: 101.5,
+    x: 45.0,
+    y: 107.0,
     image: '/angleterre.jpg',
     flag: '🇬🇧',
     landmark: '🏰',
@@ -47,8 +47,8 @@ const countries: Country[] = [
   {
     code: 'ES',
     name: 'Espagne',
-    x: 48.9,
-    y: 157.5,
+    x: 46.0,
+    y: 163.0,
     image: '/tt.jpg',
     flag: '🇪🇸',
     landmark: '🏛️',
@@ -57,8 +57,8 @@ const countries: Country[] = [
   {
     code: 'DE',
     name: 'Allemagne',
-    x: 71.7,
-    y: 120.4,
+    x: 71.0,
+    y: 124.0,
     image: '/allemagne.jpg',
     flag: '🇩🇪',
     landmark: '🏰',
@@ -67,8 +67,8 @@ const countries: Country[] = [
   {
     code: 'IT',
     name: 'Italie',
-    x: 72.8,
-    y: 149.5,
+    x: 75.0,
+    y: 153.0,
     image: '/italie.jpg',
     flag: '🇮🇹',
     landmark: '🍕',
@@ -77,8 +77,8 @@ const countries: Country[] = [
   {
     code: 'JP',
     name: 'Japon',
-    x: 166.2,
-    y: 74.7,
+    x: 168.0,
+    y: 72.0,
     image: '/japon.jpg',
     flag: '🇯🇵',
     landmark: '🗻',
@@ -87,8 +87,8 @@ const countries: Country[] = [
   {
     code: 'BE',
     name: 'Belgique',
-    x: 62.1,
-    y: 129.0,
+    x: 63.0,
+    y: 125.0,
     image: '/belgique.jpg',
     flag: '🇧🇪',
     landmark: '🧇',
@@ -97,8 +97,8 @@ const countries: Country[] = [
   {
     code: 'PT',
     name: 'Portugal',
-    x: 31.4,
-    y: 163.7,
+    x: 33.0,
+    y: 165.0,
     image: '/portugal.jpg',
     flag: '🇵🇹',
     landmark: '🏖️',
@@ -107,8 +107,8 @@ const countries: Country[] = [
   {
     code: 'GR',
     name: 'Grèce',
-    x: 107.2,
-    y: 170.1,
+    x: 109.0,
+    y: 172.0,
     image: '/grece.jpg',
     flag: '🇬🇷',
     landmark: '🏛️',
@@ -117,8 +117,8 @@ const countries: Country[] = [
   {
     code: 'CR',
     name: 'Croatie',
-    x: 96.1,
-    y: 147.6,
+    x: 96.5,
+    y: 148.0,
     image: '/croatie.jpg',
     flag: '🇭🇷',
     landmark: '🏰',
@@ -127,14 +127,15 @@ const countries: Country[] = [
   {
     code: 'HG',
     name: 'Hongrie',
-    x: 97.3,
-    y: 142.1,
+    x: 97.5,
+    y: 143.0,
     image: '/hongrie.jpg',
     flag: '🇭🇺',
     landmark: '🏰',
     description: 'Culture et patrimoine hongrois',
   },
 ];
+
 
 
 const OurStory = () => {
