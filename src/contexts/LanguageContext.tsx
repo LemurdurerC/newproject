@@ -86,11 +86,11 @@ const translations = {
     'registry.link': 'Voir notre Liste',
     
     // Gallery
-    'gallery.title': '',
-    'gallery.subtitle': '',
-    'gallery.password': '',
-    'gallery.enter': '',
-    'gallery.upload': '',
+    'gallery.title': 'Galerie Privée',
+    'gallery.subtitle': 'Partagez vos souvenirs avec nous',
+    'gallery.password': 'Mot de passe',
+    'gallery.enter': 'Accéder',
+    'gallery.upload': 'Partager une Photo',
     
     // Footer
     'footer.contact': 'Contact',

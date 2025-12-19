@@ -30,7 +30,7 @@ const Registry = () => {
               </h3>
 
               <p className="text-gray-600 mb-6 leading-relaxed">
-                
+                Cadeaux choisis avec amour
               </p>
 
               <a href="https://www.millemercismariage.com/simon-et-talia/liste.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 text-green-600 hover:bg-green-50 border border-green-200 rounded-xl font-medium transition-all duration-300 group-hover:scale-105">

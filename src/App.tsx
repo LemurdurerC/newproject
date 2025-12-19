@@ -7,6 +7,7 @@ import Venue from './components/Venue';
 import RSVP from './components/RSVP';
 import Registry from './components/Registry';
 import Quiz from './components/Quiz';
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -25,6 +26,7 @@ function App() {
           <RSVP />
           <Registry />
           <Quiz />
+          <Gallery />
         </main>
         <Footer />
       </div>
