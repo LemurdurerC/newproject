@@ -19,7 +19,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div className="text-center md:text-left">
-            <h3 className="<h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">">
+            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">
               <Heart className="w-6 h-6 mr-2 text-rose-300 animate-pulse" />
               
               {t('footer.contact')}
