@@ -33,7 +33,7 @@ const countries = [
   { code: 'LT', name: 'Lettonie', x: 116.2, y: 105.7, image: 'https://i.imgur.com/mjqhXDn.jpeg' },
   { code: 'LTN', name: 'Lituanie', x: 113.6, y: 115.2, image: 'https://i.imgur.com/6XpSOJT.jpeg' },
   { code: 'SV', name: 'Slovénie', x: 91.1, y: 147.3, image: '/slovenie.jpg' },
-  { code: 'SB', name: 'Serbie', x: 107.3, y: 153.5, image: '/serbie.jpg' },
+  { code: 'SB', name: 'Serbie', x: 107.3, y: 153.5, image: 'https://i.imgur.com/Ep6ohEH.jpeg' },
   { code: 'NL', name: 'Pays-Bas', x: 68, y: 124.2, image: 'https://i.imgur.com/t6llkQ2.jpeg' }
 ];
 
