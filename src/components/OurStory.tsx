@@ -117,19 +117,7 @@ const OurStory = () => {
   className="w-full md:w-1/2 h-48 object-cover rounded-xl cursor-pointer hover:opacity-90 transition"
   onClick={() => setIsOpen(true)}
 />
-              {isOpen && (
-  <div
-    className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-    onClick={() => setIsOpen(false)}
-  >
-    <img
-      src={selectedCountry.image}
-      alt={selectedCountry.name}
-      className="max-w-full max-h-full rounded-xl shadow-xl"
-      onClick={(e) => e.stopPropagation()}
-    />
-  </div>
-)}
+
 
               <div>
                 <h3 className="text-3xl font-bold mb-2">
