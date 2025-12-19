@@ -101,7 +101,7 @@ const OurStory = () => {
               <circle
                 cx={country.x}
                 cy={country.y}
-                r="1.5"
+                r="1"
                 fill="#a855f7"
               />
             </g>
