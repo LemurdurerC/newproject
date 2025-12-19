@@ -164,9 +164,6 @@ const Quiz = () => {
               "Pas grave, maintenant vous nous connaîtrez mieux !"
             }
           </p>
-          <p className="text-xl text-gray-600 mb-8">
-            Vos résultats ont été enregistrés. Nous partagerons le classement avec tous les invités après le mariage !
-          </p>
           <button
             onClick={resetQuiz}
             className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-rose-500 text-white font-medium rounded-xl hover:from-orange-600 hover:to-rose-600 transition-all duration-300 shadow-lg"
