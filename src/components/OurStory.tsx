@@ -14,7 +14,7 @@ type Country = {
 };
 
 const countries = [
-  { code: 'FR', name: 'France', x: 60.4, y: 141.4, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600' },
+  { code: 'FR', name: 'France', x: 60.4, y: 141.4, image: 'https://i.imgur.com/NdBtDWD.jpeg' },
   { code: 'IE', name: 'Irlande', x: 38.5, y: 121.6, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600' },
   { code: 'UK', name: 'Angleterre', x: 52.8, y: 121.6, image: 'https://i.imgur.com/sl4g1yj.jpeg' },
   { code: 'ES', name: 'Espagne', x: 43.8, y: 168.6, image: 'https://i.imgur.com/oaQ5VwX.jpeg' },
