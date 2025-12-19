@@ -73,10 +73,10 @@ const Footer = () => {
           <div className="text-center md:text-right">
             <div className="space-y-4">
               <p className="text-purple-100 italic leading-relaxed">
-                "Le bonheur n’est réel que lors qu’il est partagé"
+                "Amour n’est qu’un mot, jusqu’à ce que quelqu’un vienne lui donner un sens – Coelho"
               </p>
               <p className="text-sm text-purple-300">
-                - Into the wild
+                - Coelho
               </p>
             </div>
           </div>
