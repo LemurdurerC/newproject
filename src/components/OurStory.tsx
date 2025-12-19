@@ -19,7 +19,7 @@ const countries = [
   { code: 'UK', name: 'Angleterre', x: 52.8, y: 121.6, image: '/angleterre.jpg', flag: '🇬🇧', landmark: '🏰', description: 'Histoire, culture et charme britannique' },
   { code: 'ES', name: 'Espagne', x: 43.8, y: 168.6, image: '/tt.jpg', flag: '🇪🇸', landmark: '🏛️', description: 'Soleil, architecture et saveurs espagnoles' },
   { code: 'DE', name: 'Allemagne', x: 85.9, y: 126.1, image: '/allemagne.jpg', flag: '🇩🇪', landmark: '🏰', description: 'Châteaux médiévaux et culture allemande' },
-  { code: 'IT', name: 'Italie', x: 72, y: 148, image: '/italie.jpg', flag: '🇮🇹', landmark: '🍕', description: 'Art, histoire et gastronomie italienne' },
+  { code: 'IT', name: 'Italie', x: 85.4, y: 161.6, image: '/italie.jpg', flag: '🇮🇹', landmark: '🍕', description: 'Art, histoire et gastronomie italienne' },
   { code: 'JP', name: 'Japon', x: 165, y: 75, image: '/japon.jpg', flag: '🇯🇵', landmark: '🗻', description: 'Tradition japonaise et modernité' },
   { code: 'HG', name: 'Hongrie', x: 95, y: 142, image: '/hongrie.jpg', flag: '🇭🇺', landmark: '🏰', description: 'Culture et patrimoine hongrois' },
   { code: 'RT', name: 'Tchéquie', x: 88, y: 136, image: '/tchequie.jpg', flag: '🇨🇿', landmark: '🏰', description: 'Histoire et culture tchèque' },
