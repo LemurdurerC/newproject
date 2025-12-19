@@ -307,7 +307,7 @@ const RSVP = () => {
                       <div className="min-w-0">
                       <div>
                         <span className="text-gray-700 font-medium block break-words">Menu Classique</span>
-                        <p className="text-sm text-gray-500 leading-tight break-words">Viande, poisson, accompagnements traditionnels</p>
+                        <p className="text-sm text-gray-500 leading-tight break-words"></p>
                       </div>
                         </div>
                     </label>
@@ -331,7 +331,7 @@ const RSVP = () => {
                       </div>
                       <div>
                         <span className="text-gray-700 font-medium block">Menu Jardin</span>
-                        <p className="text-sm text-gray-500 leading-tight">Végétarien, légumes de saison, créatif</p>
+                        <p className="text-sm text-gray-500 leading-tight">Végétarien</p>
                       </div>
                     </label>
                   </div>

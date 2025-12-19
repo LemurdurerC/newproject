@@ -18,7 +18,6 @@ interface RSVPData {
 
 Deno.serve(async (req: Request) => {
   try {
-    // Handle CORS preflight requests
     if (req.method === "OPTIONS") {
       return new Response(null, {
         status: 200,
@@ -26,16 +25,13 @@ Deno.serve(async (req: Request) => {
       });
     }
 
-    // Initialize Supabase client
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
     const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // POST /rsvp - Save RSVP response
     if (req.method === "POST") {
       const rsvpData: RSVPData = await req.json();
       
-      // Validate required fields
       if (!rsvpData.name || !rsvpData.email || !rsvpData.attendance) {
         return new Response(
           JSON.stringify({ error: "Missing required fields" }),
@@ -46,7 +42,6 @@ Deno.serve(async (req: Request) => {
         );
       }
 
-      // Validate attendance value
       if (!['yes', 'no'].includes(rsvpData.attendance)) {
         return new Response(
           JSON.stringify({ error: "Invalid attendance value" }),
@@ -57,7 +52,6 @@ Deno.serve(async (req: Request) => {
         );
       }
 
-      // Validate menu if attendance is yes
       if (rsvpData.attendance === 'yes' && rsvpData.menu && !['classique', 'jardin'].includes(rsvpData.menu)) {
         return new Response(
           JSON.stringify({ error: "Invalid menu value" }),
@@ -68,7 +62,6 @@ Deno.serve(async (req: Request) => {
         );
       }
 
-      // Insert RSVP into database
       const { data, error } = await supabase
         .from('rsvps')
         .insert({
@@ -108,9 +101,7 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    // GET /rsvp - Get all RSVP responses (admin only)
     if (req.method === "GET") {
-      // Check admin password via custom header
       const adminPassword = req.headers.get('X-Admin-Password');
       
       if (adminPassword !== 'AdminSimonTalia2026') {
@@ -123,7 +114,6 @@ Deno.serve(async (req: Request) => {
         );
       }
 
-      // Fetch all RSVPs
       const { data: rsvps, error } = await supabase
         .from('rsvps')
         .select('*')
@@ -140,14 +130,12 @@ Deno.serve(async (req: Request) => {
         );
       }
 
-      // Format dates for display
       const formattedRsvps = rsvps.map((rsvp: any) => ({
         ...rsvp,
         submitted_date: new Date(rsvp.submitted_at).toLocaleDateString('fr-FR'),
         submitted_time: new Date(rsvp.submitted_at).toLocaleTimeString('fr-FR'),
       }));
 
-      // Calculate statistics
       const stats = {
         total: rsvps.length,
         attending: rsvps.filter((r: any) => r.attendance === 'yes').length,
@@ -166,7 +154,6 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    // Method not allowed
     return new Response(
       JSON.stringify({ error: "Method not allowed" }),
       {
