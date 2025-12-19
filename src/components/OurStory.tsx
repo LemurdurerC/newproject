@@ -29,7 +29,7 @@ const countries = [
   { code: 'MN', name: 'Monténégro', x: 103.6, y: 158.9, image: '/montenegro.jpg' },
   { code: 'MCN', name: 'Macédoine du Nord', x: 110.1, y: 162.8, image: '/macedoine_du_nord.jpg' },
   { code: 'CR', name: 'Croatie', x: 96.5, y: 157.4, image: '/croatie.jpg' },
-  { code: 'PT', name: 'Portugal', x: 30.6, y: 174, image: '/portugal.jpg' },
+  { code: 'PT', name: 'Portugal', x: 30.6, y: 174, image: 'https://i.imgur.com/HoB4bGl.jpeg' },
   { code: 'LT', name: 'Lettonie', x: 116.2, y: 105.7, image: '/lettonie.jpg' },
   { code: 'LTN', name: 'Lituanie', x: 113.6, y: 115.2, image: '/lituanie.jpg' },
   { code: 'SV', name: 'Slovénie', x: 91.1, y: 147.3, image: '/slovenie.jpg' },
