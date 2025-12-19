@@ -90,8 +90,8 @@ const OurStory = () => {
               >
                 <animate
                   attributeName="r"
-                  from="4"
-                  to="8"
+                  from="1"
+                  to="3"
                   dur="3.5s"
                   repeatCount="indefinite"
                 />
