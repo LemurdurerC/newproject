@@ -14,26 +14,33 @@ type Country = {
 };
 
 const countries = [
-  { code: 'FR', name: 'France', x: 62, y: 136, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇫🇷', landmark: '🗼', description: 'La ville lumière et ses monuments emblématiques' },
-  { code: 'IE', name: 'Irlande', x: 40, y: 119, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇮🇪', landmark: '☘️', description: 'Les paysages verts et la culture irlandaise' },
-  { code: 'UK', name: 'Angleterre', x: 46, y: 102, image: '/angleterre.jpg', flag: '🇬🇧', landmark: '🏰', description: 'Histoire, culture et charme britannique' },
-  { code: 'ES', name: 'Espagne', x: 49, y: 157, image: '/tt.jpg', flag: '🇪🇸', landmark: '🏛️', description: 'Soleil, architecture et saveurs espagnoles' },
-  { code: 'DE', name: 'Allemagne', x: 72, y: 121, image: '/allemagne.jpg', flag: '🇩🇪', landmark: '🏰', description: 'Châteaux médiévaux et culture allemande' },
-  { code: 'IT', name: 'Italie', x: 73, y: 150, image: '/italie.jpg', flag: '🇮🇹', landmark: '🍕', description: 'Art, histoire et gastronomie italienne' },
-  { code: 'JP', name: 'Japon', x: 167, y: 75, image: '/japon.jpg', flag: '🇯🇵', landmark: '🗻', description: 'Tradition japonaise et modernité' },
-  { code: 'HG', name: 'Hongrie', x: 97, y: 143, image: '/hongrie.jpg', flag: '🇭🇺', landmark: '🏰', description: 'Culture et patrimoine hongrois' },
-  { code: 'RT', name: 'Tchéquie', x: 88, y: 137, image: '/tchequie.jpg', flag: '🇨🇿', landmark: '🏰', description: 'Histoire et culture tchèque' },
-  { code: 'BE', name: 'Belgique', x: 63, y: 129, image: '/belgique.jpg', flag: '🇧🇪', landmark: '🧇', description: 'Charme belge et architecture' },
-  { code: 'GR', name: 'Grèce', x: 107, y: 170, image: '/grece.jpg', flag: '🇬🇷', landmark: '🏛️', description: 'Culture grecque et Méditerranée' },
-  { code: 'MN', name: 'Monténégro', x: 105, y: 160, image: '/montenegro.jpg', flag: '🇲🇪', landmark: '🏰', description: 'Paysages montagneux et patrimoine historique' },
-  { code: 'MCN', name: 'Macédoine du Nord', x: 111, y: 160, image: '/macedoine_du_nord.jpg', flag: '🇲🇰', landmark: '🏰', description: 'Culture et histoire balkanique' },
-  { code: 'CR', name: 'Croatie', x: 96, y: 148, image: '/croatie.jpg', flag: '🇭🇷', landmark: '🏰', description: 'Mer Adriatique et villes historiques' },
-  { code: 'PT', name: 'Portugal', x: 31, y: 164, image: '/portugal.jpg', flag: '🇵🇹', landmark: '🏖️', description: 'Soleil et culture portugaise' },
-  { code: 'LT', name: 'Lettonie', x: 111, y: 103, image: '/lettonie.jpg', flag: '🇱🇻', landmark: '🏞️', description: 'Paysages verts et côtes de la mer Baltique' },
-  { code: 'LTN', name: 'Lituanie', x: 107, y: 107, image: '/lituanie.jpg', flag: '🇱🇹', landmark: '🏞️', description: 'Forêts et patrimoine historique' },
-  { code: 'SV', name: 'Slovénie', x: 95, y: 145, image: '/slovenie.jpg', flag: '🇸🇮', landmark: '🏔️', description: 'Montagnes, lacs et culture slovène' },
-  { code: 'SB', name: 'Serbie', x: 106, y: 147, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' },
+  { code: 'FR', name: 'France', x: 65, y: 135, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇫🇷', landmark: '🗼', description: 'La ville lumière et ses monuments emblématiques' },
+  { code: 'IE', name: 'Irlande', x: 42, y: 120, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇮🇪', landmark: '☘️', description: 'Les paysages verts et la culture irlandaise' },
+  { code: 'UK', name: 'Angleterre', x: 45, y: 112, image: '/angleterre.jpg', flag: '🇬🇧', landmark: '🏰', description: 'Histoire, culture et charme britannique' },
+  { code: 'ES', name: 'Espagne', x: 50, y: 160, image: '/tt.jpg', flag: '🇪🇸', landmark: '🏛️', description: 'Soleil, architecture et saveurs espagnoles' },
+  { code: 'DE', name: 'Allemagne', x: 73, y: 120, image: '/allemagne.jpg', flag: '🇩🇪', landmark: '🏰', description: 'Châteaux médiévaux et culture allemande' },
+  { code: 'IT', name: 'Italie', x: 72, y: 148, image: '/italie.jpg', flag: '🇮🇹', landmark: '🍕', description: 'Art, histoire et gastronomie italienne' },
+  { code: 'JP', name: 'Japon', x: 165, y: 75, image: '/japon.jpg', flag: '🇯🇵', landmark: '🗻', description: 'Tradition japonaise et modernité' },
+  { code: 'HG', name: 'Hongrie', x: 95, y: 142, image: '/hongrie.jpg', flag: '🇭🇺', landmark: '🏰', description: 'Culture et patrimoine hongrois' },
+  { code: 'RT', name: 'Tchéquie', x: 88, y: 136, image: '/tchequie.jpg', flag: '🇨🇿', landmark: '🏰', description: 'Histoire et culture tchèque' },
+  { code: 'BE', name: 'Belgique', x: 63, y: 126, image: '/belgique.jpg', flag: '🇧🇪', landmark: '🧇', description: 'Charme belge et architecture' },
+  { code: 'GR', name: 'Grèce', x: 108, y: 170, image: '/grece.jpg', flag: '🇬🇷', landmark: '🏛️', description: 'Culture grecque et Méditerranée' },
+  { code: 'MN', name: 'Monténégro', x: 104, y: 159, image: '/montenegro.jpg', flag: '🇲🇪', landmark: '🏰', description: 'Paysages montagneux et patrimoine historique' },
+  { code: 'MCN', name: 'Macédoine du Nord', x: 110, y: 160, image: '/macedoine_du_nord.jpg', flag: '🇲🇰', landmark: '🏰', description: 'Culture et histoire balkanique' },
+  { code: 'CR', name: 'Croatie', x: 96, y: 147, image: '/croatie.jpg', flag: '🇭🇷', landmark: '🏰', description: 'Mer Adriatique et villes historiques' },
+  { code: 'PT', name: 'Portugal', x: 32, y: 165, image: '/portugal.jpg', flag: '🇵🇹', landmark: '🏖️', description: 'Soleil et culture portugaise' },
+  { code: 'LT', name: 'Lettonie', x: 110, y: 102, image: '/lettonie.jpg', flag: '🇱🇻', landmark: '🏞️', description: 'Paysages verts et côtes de la mer Baltique' },
+  { code: 'LTN', name: 'Lituanie', x: 106, y: 106, image: '/lituanie.jpg', flag: '🇱🇹', landmark: '🏞️', description: 'Forêts et patrimoine historique' },
+  { code: 'SV', name: 'Slovénie', x: 94, y: 144, image: '/slovenie.jpg', flag: '🇸🇮', landmark: '🏔️', description: 'Montagnes, lacs et culture slovène' },
+  { code: 'SB', name: 'Serbie', x: 105, y: 146, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' },
+
+  // Japon - îles principales
+  { code: 'HK', name: 'Hokkaido', x: 173, y: 35, image: '/hokkaido.jpg', flag: '🇯🇵', landmark: '🏔️', description: 'Île nord du Japon' },
+  { code: 'HN', name: 'Honshu', x: 167, y: 70, image: '/honshu.jpg', flag: '🇯🇵', landmark: '🏯', description: 'Île principale du Japon' },
+  { code: 'SK', name: 'Shikoku', x: 171, y: 85, image: '/shikoku.jpg', flag: '🇯🇵', landmark: '🌉', description: 'Petite île au sud de Honshu' },
+  { code: 'KY', name: 'Kyushu', x: 162, y: 88, image: '/kyushu.jpg', flag: '🇯🇵', landmark: '🌋', description: 'Île au sud-ouest du Japon' },
 ];
+
 
 
 
