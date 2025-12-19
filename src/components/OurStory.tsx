@@ -22,7 +22,7 @@ const countries = [
   { code: 'IT', name: 'Italie', x: 85.4, y: 161.6, image: '/italie.jpg' },
   { code: 'JP', name: 'Japon', x: 178.6, y: 80, image: '/japon.jpg' },
 
-  { code: 'HG', name: 'Hongrie', x: 102.4, y: 143.8, image: '/hongrie.jpg' },
+  { code: 'HG', name: 'Hongrie', x: 102.4, y: 143.8, image: 'https://i.imgur.com/y15Fcjp.jpeg' },
   { code: 'RT', name: 'Tchéquie', x: 91, y: 133.7, image: '/tchequie.jpg' },
   { code: 'BE', name: 'Belgique', x: 66.7, y: 132.1, image: 'https://i.imgur.com/oCVy5Nz.jpeg' },
   { code: 'GR', name: 'Grèce', x: 115.9, y: 175.1, image: 'https://i.imgur.com/xyKCYdu.jpeg' },
