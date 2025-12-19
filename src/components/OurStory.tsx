@@ -26,7 +26,7 @@ const countries = [
   { code: 'RT', name: 'Tchéquie', x: 91, y: 133.7, image: '/tchequie.jpg' },
   { code: 'BE', name: 'Belgique', x: 66.7, y: 132.1, image: 'https://i.imgur.com/oCVy5Nz.jpeg' },
   { code: 'GR', name: 'Grèce', x: 115.9, y: 175.1, image: 'https://i.imgur.com/xyKCYdu.jpeg' },
-  { code: 'MN', name: 'Monténégro', x: 103.6, y: 158.9, image: '/montenegro.jpg' },
+  { code: 'MN', name: 'Monténégro', x: 103.6, y: 158.9, image: 'https://i.imgur.com/trVZW9m.jpeg' },
   { code: 'MCN', name: 'Macédoine du Nord', x: 110.1, y: 162.8, image: 'https://i.imgur.com/UUgCfQq.jpeg' },
   { code: 'CR', name: 'Croatie', x: 96.5, y: 157.4, image: 'https://i.imgur.com/TJAD374.jpeg' },
   { code: 'PT', name: 'Portugal', x: 30.6, y: 174, image: 'https://i.imgur.com/HoB4bGl.jpeg' },
