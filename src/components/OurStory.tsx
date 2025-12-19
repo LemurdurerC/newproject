@@ -32,10 +32,7 @@ const countries = [
   { code: 'LT', name: 'Lettonie', x: 110, y: 102, image: '/lettonie.jpg', flag: '🇱🇻', landmark: '🏞️', description: 'Paysages verts et côtes de la mer Baltique' },
   { code: 'LTN', name: 'Lituanie', x: 106, y: 106, image: '/lituanie.jpg', flag: '🇱🇹', landmark: '🏞️', description: 'Forêts et patrimoine historique' },
   { code: 'SV', name: 'Slovénie', x: 94, y: 144, image: '/slovenie.jpg', flag: '🇸🇮', landmark: '🏔️', description: 'Montagnes, lacs et culture slovène' },
-  { code: 'SB', name: 'Serbie', x: 105, y: 146, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' },
-
-  // Japon - îles principales
-  { code: 'HK', name: 'Hokkaido', x: 173, y: 35, image: '/hokkaido.jpg', flag: '🇯🇵', landmark: '🏔️', description: 'Île nord du Japon' }
+  { code: 'SB', name: 'Serbie', x: 105, y: 146, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' }
 ];
 
 
