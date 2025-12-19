@@ -18,7 +18,7 @@ const countries = [
   { code: 'IE', name: 'Irlande', x: 38.5, y: 121.6, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600' },
   { code: 'UK', name: 'Angleterre', x: 52.8, y: 121.6, image: '/angleterre.jpg' },
   { code: 'ES', name: 'Espagne', x: 43.8, y: 168.6, image: '/tt.jpg' },
-  { code: 'DE', name: 'Allemagne', x: 85.9, y: 126.1, image: '/allemagne.jpg' },
+  { code: 'DE', name: 'Allemagne', x: 85.9, y: 126.1, image: 'https://i.imgur.com/NQMoF5o.jpeg' },
   { code: 'IT', name: 'Italie', x: 85.4, y: 161.6, image: '/italie.jpg' },
   { code: 'JP', name: 'Japon', x: 178.6, y: 80, image: '/japon.jpg' },
 
