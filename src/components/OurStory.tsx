@@ -13,7 +13,7 @@ type Country = {
   description: string;
 };
 
-const countries = [
+const countries: Country[] = [
   { code: 'FR', name: 'France', x: 62, y: 136, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇫🇷', landmark: '🗼', description: 'La ville lumière et ses monuments emblématiques' },
   { code: 'IE', name: 'Irlande', x: 40, y: 119, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇮🇪', landmark: '☘️', description: 'Les paysages verts et la culture irlandaise' },
   { code: 'UK', name: 'Angleterre', x: 46, y: 102, image: '/angleterre.jpg', flag: '🇬🇧', landmark: '🏰', description: 'Histoire, culture et charme britannique' },
@@ -35,12 +35,46 @@ const countries = [
   { code: 'SB', name: 'Serbie', x: 106, y: 147, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' },
 ];
 
-
-
-
-
 const OurStory = () => {
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
+
+  // 🔧 Petite fonction pour afficher la map
+  const MapBlock = ({ isMobile = false }: { isMobile?: boolean }) => (
+    <div
+      className={`relative w-full rounded-2xl overflow-hidden ${
+        isMobile ? 'h-[60vh]' : 'aspect-[3/2] max-w-5xl mx-auto'
+      } bg-gradient-to-br from-blue-50 to-green-50`}
+      style={{ transform: 'scale(1.1)', transformOrigin: 'center' }}
+    >
+      {/* Background map */}
+      <div className="absolute inset-0 origin-center scale-125 md:scale-100 transition-transform duration-500">
+        <div
+          className="absolute inset-0 bg-no-repeat bg-center bg-contain"
+          style={{ backgroundImage: `url(${mapSvg})` }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30"></div>
+      </div>
+
+      {/* Points */}
+      {countries.map((country) => (
+        <div
+          key={country.code}
+          className="absolute cursor-pointer"
+          style={{
+            left: `${country.x}px`,
+            top: `${country.y}px`,
+            transform: 'translate(-50%, -50%)',
+          }}
+          onClick={() => setSelectedCountry(country)}
+        >
+          {/* Halo */}
+          <div className="w-6 h-6 bg-pink-500 opacity-25 rounded-full animate-pulse absolute -top-1.5 -left-1.5"></div>
+          {/* Point */}
+          <div className="w-2.5 h-2.5 bg-purple-500 rounded-full relative z-10"></div>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <section
@@ -48,7 +82,6 @@ const OurStory = () => {
       className="py-20 bg-gradient-to-br from-rose-50 via-purple-50 to-orange-50"
     >
       <div className="max-w-7xl mx-auto px-4">
-
         {/* Titre */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
@@ -57,55 +90,8 @@ const OurStory = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-purple-400 mx-auto mt-6 rounded-full" />
         </div>
 
-        {/* MAP SVG */}
-        <svg
-          viewBox="0 0 215.86 186.82"
-          className="w-full max-w-5xl mx-auto h-auto rounded-2xl shadow-lg bg-white bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl overflow-hidden"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          {/* Carte */}
-          <image
-            href={mapSvg}
-            x="0"
-            y="0"
-            width="215.86"
-            height="186.82"
-          />
-
-          {/* Points */}
-          {countries.map((country) => (
-            <g
-              key={country.code}
-              className="cursor-pointer"
-              onClick={() => setSelectedCountry(country)}
-            >
-              {/* halo */}
-              <circle
-                cx={country.x}
-                cy={country.y}
-                r="6"
-                fill="#f43f5e"
-                opacity="0.25"
-              >
-                <animate
-                  attributeName="r"
-                  from="4"
-                  to="8"
-                  dur="1.5s"
-                  repeatCount="indefinite"
-                />
-              </circle>
-
-              {/* point */}
-              <circle
-                cx={country.x}
-                cy={country.y}
-                r="2.5"
-                fill="#a855f7"
-              />
-            </g>
-          ))}
-        </svg>
+        {/* MAP BLOCK */}
+        <MapBlock />
 
         {/* INFOS */}
         <div className="mt-10 bg-white rounded-2xl shadow p-6 max-w-4xl mx-auto">
@@ -116,7 +102,6 @@ const OurStory = () => {
                 alt={selectedCountry.name}
                 className="w-full md:w-1/2 h-48 object-cover rounded-xl"
               />
-
               <div>
                 <h3 className="text-3xl font-bold mb-2">
                   {selectedCountry.name} {selectedCountry.flag}
@@ -137,7 +122,6 @@ const OurStory = () => {
             </div>
           )}
         </div>
-
       </div>
     </section>
   );
