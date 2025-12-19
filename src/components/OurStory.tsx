@@ -19,7 +19,7 @@ const countries = [
   { code: 'UK', name: 'Angleterre', x: 52.8, y: 121.6, image: 'https://i.imgur.com/sl4g1yj.jpeg' },
   { code: 'ES', name: 'Espagne', x: 43.8, y: 168.6, image: 'https://i.imgur.com/oaQ5VwX.jpeg' },
   { code: 'DE', name: 'Allemagne', x: 85.9, y: 126.1, image: 'https://i.imgur.com/NQMoF5o.jpeg' },
-  { code: 'IT', name: 'Italie', x: 85.4, y: 161.6, image: '/italie.jpg' },
+  { code: 'IT', name: 'Italie', x: 85.4, y: 161.6, image: 'https://i.imgur.com/sBH1bsa.jpeg' },
   { code: 'JP', name: 'Japon', x: 178.6, y: 80, image: '/japon.jpg' },
 
   { code: 'HG', name: 'Hongrie', x: 102.4, y: 143.8, image: 'https://i.imgur.com/y15Fcjp.jpeg' },
