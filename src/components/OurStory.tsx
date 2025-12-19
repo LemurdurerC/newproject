@@ -111,12 +111,7 @@ const OurStory = () => {
         <div className="mt-10 bg-white rounded-2xl shadow p-6 max-w-4xl mx-auto">
           {selectedCountry ? (
             <div className="flex flex-col md:flex-row gap-6 items-center">
-          <img
-  src={selectedCountry.image}
-  alt={selectedCountry.name}
-  className="w-full md:w-1/2 h-48 object-cover rounded-xl cursor-pointer hover:opacity-90 transition"
-  onClick={() => setIsOpen(true)}
-/>
+<img src={selectedCountry.image} alt={selectedCountry.name} className="w-full md:w-1/2 h-48 object-cover rounded-xl" />
 
 
               <div>
