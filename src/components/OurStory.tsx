@@ -31,7 +31,7 @@ const countries = [
   { code: 'CR', name: 'Croatie', x: 96.5, y: 157.4, image: 'https://i.imgur.com/TJAD374.jpeg' },
   { code: 'PT', name: 'Portugal', x: 30.6, y: 174, image: 'https://i.imgur.com/HoB4bGl.jpeg' },
   { code: 'LT', name: 'Lettonie', x: 116.2, y: 105.7, image: 'https://i.imgur.com/mjqhXDn.jpeg' },
-  { code: 'LTN', name: 'Lituanie', x: 113.6, y: 115.2, image: '/lituanie.jpg' },
+  { code: 'LTN', name: 'Lituanie', x: 113.6, y: 115.2, image: 'https://i.imgur.com/6XpSOJT.jpeg' },
   { code: 'SV', name: 'Slovénie', x: 91.1, y: 147.3, image: '/slovenie.jpg' },
   { code: 'SB', name: 'Serbie', x: 107.3, y: 153.5, image: '/serbie.jpg' },
   { code: 'NL', name: 'Pays-Bas', x: 68, y: 124.2, image: '/pays-bas.jpg' }
