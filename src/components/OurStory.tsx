@@ -35,10 +35,7 @@ const countries = [
   { code: 'SB', name: 'Serbie', x: 105, y: 146, image: '/serbie.jpg', flag: '🇷🇸', landmark: '🏰', description: 'Histoire et culture serbe' },
 
   // Japon - îles principales
-  { code: 'HK', name: 'Hokkaido', x: 173, y: 35, image: '/hokkaido.jpg', flag: '🇯🇵', landmark: '🏔️', description: 'Île nord du Japon' },
-  { code: 'HN', name: 'Honshu', x: 167, y: 70, image: '/honshu.jpg', flag: '🇯🇵', landmark: '🏯', description: 'Île principale du Japon' },
-  { code: 'SK', name: 'Shikoku', x: 171, y: 85, image: '/shikoku.jpg', flag: '🇯🇵', landmark: '🌉', description: 'Petite île au sud de Honshu' },
-  { code: 'KY', name: 'Kyushu', x: 162, y: 88, image: '/kyushu.jpg', flag: '🇯🇵', landmark: '🌋', description: 'Île au sud-ouest du Japon' },
+  { code: 'HK', name: 'Hokkaido', x: 173, y: 35, image: '/hokkaido.jpg', flag: '🇯🇵', landmark: '🏔️', description: 'Île nord du Japon' }
 ];
 
 
