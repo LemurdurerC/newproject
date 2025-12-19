@@ -14,7 +14,7 @@ type Country = {
 };
 
 const countries = [
-  { code: 'FR', name: 'France', x: 65, y: 135, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇫🇷', landmark: '🗼', description: 'La ville lumière et ses monuments emblématiques' },
+  { code: 'FR', name: 'France', x: 60.4, y: 141.4, image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇫🇷', landmark: '🗼', description: 'La ville lumière et ses monuments emblématiques' },
   { code: 'IE', name: 'Irlande', x: 42, y: 120, image: 'https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&w=800&h=600', flag: '🇮🇪', landmark: '☘️', description: 'Les paysages verts et la culture irlandaise' },
   { code: 'UK', name: 'Angleterre', x: 45, y: 112, image: '/angleterre.jpg', flag: '🇬🇧', landmark: '🏰', description: 'Histoire, culture et charme britannique' },
   { code: 'ES', name: 'Espagne', x: 50, y: 160, image: '/tt.jpg', flag: '🇪🇸', landmark: '🏛️', description: 'Soleil, architecture et saveurs espagnoles' },
