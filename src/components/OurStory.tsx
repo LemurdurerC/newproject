@@ -92,7 +92,7 @@ const OurStory = () => {
                   attributeName="r"
                   from="4"
                   to="8"
-                  dur="0.5s"
+                  dur="3.5s"
                   repeatCount="indefinite"
                 />
               </circle>
