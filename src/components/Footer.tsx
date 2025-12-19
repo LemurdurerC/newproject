@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Wedding Date */}
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">
-              Simon & Talia
+              Lieu et Adresse
             </h3>
             <div className="space-y-4">
               <div className="flex items-center justify-center">
