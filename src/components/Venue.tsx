@@ -7,18 +7,18 @@ const Venue = () => {
 
   const hotels = [
     {
-      name: 'La Boule d’Or',
+      name: 'La Boule d’Or - Auberge Créative',
       rating: 4,
       price: '100 – 115€ la chambre',
-      distance: '16km du domaine - 17 mins en voiture',
-      description: 'Auberge créative',
+      distance: '16km du domaine - 17 minutes en voiture',
+      description: '',
       link: 'https://www.booking.com/hotel/fr/la-boule-d-39-or-clamecy.en-gb.html?aid=303948&label=merry-sur-yonne-a%2ALgjn5E4J3b2ny89iQspwS294441456633%3Apl%3Ata%3Ap12%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395719376965%3Akwd-13069270641%3Alp9196363%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=fa99be4ac6a3b15b27500150fc850814&all_sr_blocks=1014684006_374021643_0_1_0&checkin=2026-07-11&checkout=2026-07-12&dest_id=-1451103&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1014684006_374021643_0_1_0&hpos=1&matching_block_id=1014684006_374021643_0_1_0&nflt=ht_id%3D1100&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1014684006_374021643_0_1_0__9765&srepoch=1761153813&srpvid=4cfa7a1f2815049d&type=total&ucfs=1&',
     },
     {
       name: 'Les Glycines – Vézelay',
       rating: 5,
       price: '140 – 170€ la chambre',
-      distance: '17km du domaine - 20 mins en voiture',
+      distance: '17km du domaine - 20 minutes en voiture',
       description: '',
       link: 'https://www.booking.com/hotel/fr/vezelay-les-glycines.en-gb.html?aid=303948&label=merry-sur-yonne-a%2ALgjn5E4J3b2ny89iQspwS294441456633%3Apl%3Ata%3Ap12%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395719376965%3Akwd-13069270641%3Alp9196363%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=fa99be4ac6a3b15b27500150fc850814&all_sr_blocks=166130206_257593729_0_0_0&checkin=2026-07-11&checkout=2026-07-12&dest_id=-1451103&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&highlighted_blocks=166130206_257593729_0_0_0&hpos=3&matching_block_id=166130206_257593729_0_0_0&nflt=ht_id%3D1100&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=166130206_257593729_0_0_0__14276&srepoch=1761153905&srpvid=4cfa7a1f2815049d&type=total&ucfs=1&',
     },
@@ -26,7 +26,7 @@ const Venue = () => {
       name: 'Camping Le Petit Port – Olycamp',
       rating: 3,
       price: '',
-      distance: '800m du domaine – 10 mins à pieds',
+      distance: '800m du domaine – 10 minutes à pieds',
       description: '',
       link: 'https://www.camping-chatel-censoir.fr/',
     }
@@ -64,7 +64,7 @@ const Venue = () => {
                 
                 <div className="space-y-4 mb-8">
                   <p className="text-gray-700 leading-relaxed">
-                    Charmant domaine niché au cœur de la vallée de l’Yonne, le Domaine de Saint-Marc à Merry-sur-Yonne offre un cadre authentique et paisible, entre rivière et collines boisées. Entourée d’un vaste parc arboré, cette élégante propriété allie le charme de la pierre bourguignonne à des espaces rénovés
+                    Charmant domaine niché au cœur de la vallée de l’Yonne, le Domaine de Saint-Marc à Merry-sur-Yonne offre un cadre authentique et paisible, entre rivière et collines boisées. Entourée d’un vaste parc arboré, cette élégante propriété allie le charme de la pierre bourguignonne à des espaces rénovés.
                   </p>
 
                 </div>
