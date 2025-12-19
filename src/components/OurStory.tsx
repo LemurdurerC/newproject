@@ -24,7 +24,7 @@ const countries = [
 
   { code: 'HG', name: 'Hongrie', x: 102.4, y: 143.8, image: '/hongrie.jpg' },
   { code: 'RT', name: 'Tchéquie', x: 91, y: 133.7, image: '/tchequie.jpg' },
-  { code: 'BE', name: 'Belgique', x: 66.7, y: 132.1, image: '/belgique.jpg' },
+  { code: 'BE', name: 'Belgique', x: 66.7, y: 132.1, image: 'https://i.imgur.com/oCVy5Nz.jpeg' },
   { code: 'GR', name: 'Grèce', x: 115.9, y: 175.1, image: '/grece.jpg' },
   { code: 'MN', name: 'Monténégro', x: 103.6, y: 158.9, image: '/montenegro.jpg' },
   { code: 'MCN', name: 'Macédoine du Nord', x: 110.1, y: 162.8, image: '/macedoine_du_nord.jpg' },
