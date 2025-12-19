@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="text-center md:text-right">
             <div className="space-y-4">
               <p className="text-purple-100 italic leading-relaxed">
-                "Amour n’est qu’un mot, jusqu’à ce que quelqu’un vienne lui donner un sens – Coelho"
+                "Amour n’est qu’un mot, jusqu’à ce que quelqu’un vienne lui donner un sens – Coelho
               </p>
               <p className="text-sm text-purple-300">
                 - Coelho
