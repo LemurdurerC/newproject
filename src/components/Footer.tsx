@@ -16,10 +16,12 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          
           {/* Contact Info */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-6 flex items-center justify-center md:justify-start">
+            <h3 className="<h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">">
               <Heart className="w-6 h-6 mr-2 text-rose-300 animate-pulse" />
+              
               {t('footer.contact')}
             </h3>
             <div className="space-y-4">
