@@ -100,7 +100,7 @@ const Hero = () => {
         <div className="animate-fade-in-delayed">
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent mx-auto mb-6"></div>
           <p className="text-rose-100 italic text-lg">
-            "Amour n’est qu’un mot, jusqu’à ce que quelqu’un vienne lui donner un sens – Coelho"
+            "Le bonheur n’est réel que lors qu’il est partagé" - Into the wild
           </p>
         </div>
       </div>
