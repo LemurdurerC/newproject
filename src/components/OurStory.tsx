@@ -122,8 +122,6 @@ const OurStory = () => {
                   {selectedCountry.description}
                 </p>
                 <div className="flex items-center text-purple-500">
-                  <Camera className="w-5 h-5 mr-2" />
-                  Souvenir de voyage
                 </div>
               </div>
             </div>
