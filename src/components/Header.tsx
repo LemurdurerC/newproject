@@ -68,7 +68,9 @@ const Header = () => {
             ))}
           </div>
 
-         
+          {/* Language Toggle & Mobile Menu */}
+          <div className="flex items-center space-x-4">
+
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
