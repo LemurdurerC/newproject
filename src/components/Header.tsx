@@ -68,19 +68,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Language Toggle & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
-              className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'bg-rose-100 text-rose-600 hover:bg-rose-200' 
-                  : 'bg-white/20 text-white hover:bg-white/30'
-              }`}
-            >
-              <Languages size={16} />
-              <span>{language.toUpperCase()}</span>
-            </button>
+         
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
