@@ -34,11 +34,12 @@ const Footer = () => {
                                         </span>
 
               </div>
-              <div className="flex items-center justify-center md:justify-start group">
-                <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
-                <span className="group-hover:text-green-200 transition-colors duration-200">
-                                          +33 7 82 22 83 47 Simon</span>
-              </div>
+           <div className="flex items-center justify-center md:justify-start group">
+  <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
+  <span className="group-hover:text-green-200 transition-colors duration-200">
+    +33 7 82 22 83 47 Simon
+  </span>
+</div>
                             </div>
                           <div className="flex items-center justify-center md:justify-start group">
 
