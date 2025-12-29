@@ -39,7 +39,8 @@ const Footer = () => {
                 <span className="group-hover:text-green-200 transition-colors duration-200">
                                           +33 7 82 22 83 47 Simon</span>
               </div>
-</br>
+
+<div className="flex items-center justify-center md:justify-start group mt-6">
                           <div className="flex items-center justify-center md:justify-start group">
 
                 <span className="group-hover:text-green-200 transition-colors duration-200">
