@@ -42,7 +42,6 @@ const Footer = () => {
               <div className="flex items-center justify-center md:justify-start group">
                 <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
                 <span className="group-hover:text-green-200 transition-colors duration-200">
-                                          Pour toute question ou message que vous ne voudriez pas envoyer directement aux futurs mariés, la super équipe des témoins est là pour vous. Clémence centralisera vos messages.
 +33 6 22 81 93 03 Clémence (témoin)</span>
               </div>
             
