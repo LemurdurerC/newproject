@@ -16,42 +16,48 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          
+
           {/* Contact Info */}
           <div className="text-center md:text-left">
             <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">
-              
               {t('footer.contact')}
             </h3>
+
             <div className="space-y-4">
+
               <div className="flex items-center justify-center md:justify-start group">
                 <Mail className="w-5 h-5 mr-3 text-purple-300 group-hover:text-purple-200 transition-colors duration-200" />
-                <span className="group-hover:text-purple-200 transition-colors duration-200">mariage.simon.et.talia@gmail.com</span>
+                <span className="group-hover:text-purple-200 transition-colors duration-200">
+                  mariage.simon.et.talia@gmail.com
+                </span>
               </div>
-              <div className="flex items-center justify-center md:justify-start group">
-                <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
-                <span className="group-hover:text-green-200 transition-colors duration-200"> +33 6 11 43 83 42 Talia
-                                        </span>
 
-              </div>
               <div className="flex items-center justify-center md:justify-start group">
                 <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
                 <span className="group-hover:text-green-200 transition-colors duration-200">
-                                          +33 7 82 22 83 47 Simon</span>
+                  +33 6 11 43 83 42 Talia
+                </span>
               </div>
 
-<div className="flex items-center justify-center md:justify-start group mt-6">
-                          <div className="flex items-center justify-center md:justify-start group">
-
-                <span className="group-hover:text-green-200 transition-colors duration-200">
-Pour toute question ou message que vous ne voudriez pas envoyer directement aux futurs mariés, la super équipe des témoins est là pour vous. Clémence centralisera vos messages.</span>
-
-              </div>
               <div className="flex items-center justify-center md:justify-start group">
                 <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
                 <span className="group-hover:text-green-200 transition-colors duration-200">
-+33 6 22 81 93 03 Clémence (témoin)</span>
+                  +33 7 82 22 83 47 Simon
+                </span>
+              </div>
 
+              {/* Séparation */}
+              <div className="mt-6 text-sm text-purple-200 leading-relaxed">
+                Pour toute question ou message que vous ne voudriez pas envoyer directement aux futurs mariés,
+                la super équipe des témoins est là pour vous. Clémence centralisera vos messages.
+              </div>
+
+              <div className="flex items-center justify-center md:justify-start group">
+                <Phone className="w-5 h-5 mr-3 text-green-300 group-hover:text-green-200 transition-colors duration-200" />
+                <span className="group-hover:text-green-200 transition-colors duration-200">
+                  +33 6 22 81 93 03 Clémence (témoin)
+                </span>
+              </div>
 
             </div>
           </div>
@@ -71,7 +77,7 @@ Pour toute question ou message que vous ne voudriez pas envoyer directement aux 
               <div className="flex items-center justify-center">
                 <MapPin className="w-5 h-5 mr-2 text-green-300" />
                 <p className="text-purple-200">
-                 Domaine de Saint-Marc, Merry-sur-Yonne
+                  Domaine de Saint-Marc, Merry-sur-Yonne
                 </p>
               </div>
               <div className="inline-flex items-center space-x-4 text-purple-300 mt-6">
@@ -93,17 +99,16 @@ Pour toute question ou message que vous ne voudriez pas envoyer directement aux 
               </p>
             </div>
           </div>
+
         </div>
 
         {/* Divider */}
         <div className="border-t border-purple-600/30 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div className="text-center md:text-left">
-              <p className="text-purple-200 text-sm">
-                © 2025 Simon & Talia. Créé avec 💝 pour notre jour spécial.
-              </p>
-            </div>
-            
+            <p className="text-purple-200 text-sm text-center md:text-left">
+              © 2025 Simon & Talia. Créé avec 💝 pour notre jour spécial.
+            </p>
+
             <div className="flex items-center space-x-6">
               <button className="text-purple-300 hover:text-white transition-colors duration-200 text-sm">
                 Politique de Confidentialité
@@ -122,9 +127,8 @@ Pour toute question ou message que vous ne voudriez pas envoyer directement aux 
             <Heart className="w-6 h-6 text-rose-300 animate-pulse" />
             <div className="w-8 h-px bg-gradient-to-l from-transparent via-rose-300 to-transparent"></div>
           </div>
-          <p className="text-purple-200 text-sm mt-4 italic">
-          </p>
         </div>
+
       </div>
     </footer>
   );
