@@ -31,7 +31,7 @@ const Quiz = () => {
       correct: 3
     },
     {
-      question: "Quel est votre jeu de société préféré ? (On sait, ça change tout le temps)",
+      question: "Quel est notre jeu de société préféré ? (On sait, ça change tout le temps)",
       options: ["Splendor", "The Crew", "Unlock", "7 Wonders Duel"],
       correct: 3
     },
