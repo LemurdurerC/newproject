@@ -97,8 +97,8 @@ const Quiz = () => {
     };
 
     try {
-      //const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/quiz-mysql`;
-      const apiUrl = 'https://otrnsxmkppgxaepekdan.supabase.co/functions/v1/quiz-mysql';
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/quiz-mysql`;
+      //const apiUrl = 'https://otrnsxmkppgxaepekdan.supabase.co/functions/v1/quiz-mysql';
       
 
       const response = await fetch(apiUrl, {
